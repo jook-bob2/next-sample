@@ -1,0 +1,1885 @@
+{
+	"meta": {
+		"brdTitle": "Board list",
+		"brdDesc": "This is board list",
+		"faqTitle": "FAQ",
+		"faqDesc": "Frequently Asked Questions"
+	},
+	"home": {
+		"content": "Welcome to Silkroad."
+	},
+	"header": {
+		"menu1": "Hosting",
+		"menu1_1": "Web Hosting?",
+		"menu2": "Apply",
+		"menu2_1": "Product",
+		"menu3": "Customer Center",
+		"menu3_1": "1:1 Inquiry",
+		"menu3_2": "Noice",
+		"menu3_3": "FAQ",
+		"menu4": "My Silkroad",
+		"signIn": "Sign in",
+		"signInMobile": "Sign in",
+		"signOut": "Sign out",
+		"signUp": "Sign up",
+		"findId": "Find id",
+		"findPw": "Find password",
+		"setInfo": "Member Setting",
+		"sir": "Sir"
+	},
+	"footer": {
+		"footerIntro": "About Us",
+		"footerPrivacy": {
+			"title": "privacy policy",
+			"meta": {
+				"title": "privacy policy",
+				"desc": "privacy policy"
+			},
+			"container": {
+				"title": "We refuse to collect unauthorized e-mail addresses posted on this website using e-mail collection programs or other technical devices.",
+				"subTitle": "Star Labs(hereinafter referred to as the “Company” or “Star Labs”) is responsible for the protection of personal information under the relevant laws and regulations that information and communications service providers must comply with, such as the Act on Promotion of Information and Communications Network Utilization and Information Protection (hereinafter the “Information and Communications Network Act”). We are doing our best to protect the rights and interests of users by establishing a personal information processing policy in accordance with relevant laws and regulations.",
+				"Chapter1": {
+					"title": "Chapter 1. Purpose of collection and use of personal information",
+					"subTitle": "Personal information is information about surviving individuals, including information that can identify individual members of the company by real name, etc. Says. The personal information collected by the company is used for the following purposes.",
+					"numbering1": "1. Implementation of contract for service provision and settlement of fees for service provision",
+					"numberingSub1": "Provision of content, delivery of goods or sending of invoices, identification and purchase, payment of charges, collection of charges",
+					"numbering2": "2. Member Management",
+					"numberingSub2": "Identification according to membership service use, personal identification, prevention of illegal use and unauthorized use of bad members, confirmation of intention to join, limiting the number of subscriptions and subscriptions, identification of legal representatives of persons under 14 years of age who signed up before this revision, and dispute resolution record preservation, complaint handling, civil complaint handling, notice delivery, etc.",
+					"numbering3": "3. Used for marketing and advertising",
+					"numberingSub3": "Development and specialization of new services (products), provision of services and advertisements according to demographic characteristics, identification of access frequency, statistics on member service use, and delivery of advertising information such as events It is not provided to groups.)"
+				},
+				"Chapter2": {
+					"title": "Chapter 2 Items of Personal Information Collected and Method of Collection",
+					"subTitle1": {
+						"title": "[ Items of personal information to be collected ]",
+						"numbering1": "1. Upon initial membership registration, the following information is collected to identify members and provide optimized services.",
+						"numberingSub1": "- Required items: email address, password, name",
+						"numbering2": "2. The following information may be generated and collected during service use, event application, or other business processing.",
+						"numberingSub2": "- Payment method information such as name, gender, date of birth, occupation, company name, address, phone number, fax number, bank/credit card information, service use record, access log, cookie, access IP information, payment record, bad use record, User status information, visit date and time, device unique number (device ID or IMEI when using mobile)"
+					},
+					"subTitle2": {
+						"title": "[ Collection method ]",
+						"subTitle": "The company collects personal information in the following ways.",
+						"numbering1": "1. Membership registration through the website, consultation bulletin board, application for giveaway events, delivery request",
+						"numbering2": "2. Collection through the generation information collection tool",
+						"numbering3": "3. Collection through voluntary provision of essential information for service use or when necessary"
+					}
+				},
+				"Chapter3": {
+					"title": "Chapter 3 Period of Retention and Use of Collected Personal Information",
+					"subTitle1": {
+						"title": "In principle, after the purpose of collecting and using personal information is achieved, the information is destroyed without delay in an irretrievable way. However, the following information is retained for the period specified for the following reasons.",
+						"numbering1": "1. If it is necessary to preserve in accordance with the provisions of related laws, such as the Commercial Act, the Consumer Protection Act in Electronic Commerce, etc., the company keeps member information for a certain period of time as stipulated by the relevant laws and regulations. In this case, the company uses the stored information only for the purpose of storage, and the retention period is as follows.",
+						"numberingSub1": {
+							"title": "- Records on contract or subscription withdrawal",
+							"desc1": "ㆍReason for retention: Act on Consumer Protection in Electronic Commerce, Etc.",
+							"desc2": "ㆍRetention period: 5 years"
+						},
+						"numberingSub2": {
+							"title": "- Records on payment and supply of goods",
+							"desc1": "ㆍReason for retention: Act on Consumer Protection in Electronic Commerce, Etc.",
+							"desc2": "ㆍRetention period: 5 years"
+						},
+						"numberingSub3": {
+							"title": "- Records on consumer complaints or dispute handling",
+							"desc1": "ㆍReason for retention: Act on Consumer Protection in Electronic Commerce, Etc.",
+							"desc2": "ㆍRetention period: 3 years"
+						},
+						"numberingSub4": {
+							"title": "- Records of visits (service use records, access logs, access IP information)",
+							"desc1": "ㆍReason for preservation: Communication Secret Protection Act",
+							"desc2": "ㆍRetention period: 3 months"
+						}
+					}
+				},
+				"Chapter4": {
+					"title": "Chapter 4 Destruction Procedures and Methods of Personal Information",
+					"subTitle1": "In principle, the company destroys the information without delay after the purpose of collection and use of personal information is achieved or the period of retention and use has elapsed. However, in accordance with the 'personal information validity period system', if a member does not have a use record for one year, the company notifies the member in advance and separates and manages personal information for one year before destroying it.",
+					"subTitle2": "The destruction procedure and method are as follows.",
+					"numbering1": "1. Destruction procedure",
+					"numberingSub1": "The information entered by the member for membership registration, etc. is stored for a certain period of time and then destroyed in accordance with the internal policy and other relevant laws and regulations (refer to the retention and use period) after the purpose is achieved. This personal information will not be used for any purpose other than the one for which it is retained, except as required by law.",
+					"numbering2": "2. Destruction method",
+					"numberingSub2": "Personal information printed on paper is shredded or destroyed through incineration, and personal information stored in electronic file format is deleted using a technical method that cannot reproduce records."
+				},
+				"Chapter5": {
+					"title": "Chapter 5 Provision and Sharing of Personal Information",
+					"subTitle": "In principle, the company uses members' personal information only for the purpose of collection and use, and does not disclose it to others or other companies/organizations. However, exceptions are made in the following cases.",
+					"subTitle1": {
+						"numbering1": "1. If the user consents in advance",
+						"numberingSub1": "- Prior to information collection or information provision, members are informed of who their business partners are, what information is needed and why, when and how they are protected/managed and go through the process of asking for consent. We do not share with our partners."
+					},
+					"subTitle2": {
+						"numbering1": "2. In accordance with the provisions of laws and regulations, or when there is a request from the investigation agency in accordance with the procedures and methods stipulated in the laws for the purpose of investigation"
+					},
+					"subTitle3": {
+						"numbering1": "3. Use and provision of personal information in accordance with the purpose of use",
+						"numberingSub1": "- In the case of providing the applicant's information to the service registrar for domain, keyword, WINC, SSL registration",
+						"numberingSub2": "- In case of providing for WHOIS service for domain name",
+						"numberingSub3": "- If the dispute resolution body or court requests the contact information of the domain registrant involved in the dispute",
+						"numberingSub4": "- In case the data on the personal information of the international domain name registrant needs to be consigned to an overseas escrow company in accordance with the contract with the Internet Corporation for Assigned Names and Numbers (ICANN) (member's ID and password, domain name, name server information, expiration date, owner name and address, e-mail address)",
+						"numberingSub5": "- When a government agency requests domain name and name server information in order to carry out the business under its jurisdiction",
+						"numberingSub6": "- When using member information (name, address, phone number) for business communication",
+						"numberingSub7": "- When providing in a form that cannot be identified as a specific customer as it is necessary for statistical preparation, public relations data, academic research, or market research"
+					},
+					"subTitle4": {
+						"numbering1": "4. If it is necessary to provide personal information to a third party, personal information may be provided to a third party through legal procedures such as obtaining user consent. The company may provide personal information as follows through legitimate procedures, such as obtaining the user's consent, if necessary for the execution of transactions by users.",
+						"table1": "Recipient",
+						"table2": "Purpose of provision",
+						"table3": "information provided",
+						"table4": "Retention and use period",
+						"numberingSub1": "※ However, if it is necessary to preserve it according to the provisions of related laws, it may be retained according to the relevant retention period.",
+						"numberingSub2": "- Users may not consent to the provision of personal information to third parties, and may withdraw consent to provision of personal information to third parties at any time. Even if you refuse to agree, you can use the membership service, but the use/provision of related services based on the provision of a third party may be restricted. Changes to the provision of other personal information to third parties will be notified and separately notified"
+					}
+				},
+				"Chapter6": {
+					"title": "Chapter 6 Personal information consignment processing company",
+					"subTitle1": "The company consigns personal information as follows to improve service, and in accordance with relevant laws and regulations, the company stipulates necessary matters so that personal information can be safely managed in the consignment contract.",
+					"subTitle2": "The details of the company's personal information consignment processing agency and consignment work are as follows.",
+					"thead1": "consignment company",
+					"thead2": "Consignment work",
+					"thead3": "Period of retention and use of personal information",
+					"tbody1": "SMARTRO",
+					"tbody2": "payment service",
+					"tbody3": "Until membership withdrawal or end of consignment contract"
+				},
+				"Chapter7": {
+					"title": "Chapter 7 Matters concerning the installation, operation and rejection of automatic personal information collection devices",
+					"subTitle": "In order to provide personalized and customized services to each member, the company uses 'cookies' to store and retrieve member information from time to time. A cookie is a small data package that the server used to operate the website sends to the user's browser and is stored on the hard disk of the member's computer.",
+					"subTitle1": {
+						"numbering1": "1. Purpose of use of cookies",
+						"numberingSub1": "- Provide targeted marketing and personalized services by analyzing the access frequency and visit time of members and non-members, identifying users' tastes and interests, tracking traces, and identifying the degree of participation in various events and number of visits, etc."
+					},
+					"subTitle2": {
+						"numbering1": "2. How to refuse cookie settings",
+						"numberingSub1": "- Members have the option of installing cookies. Therefore, the member can allow all cookies by setting options in the web browser, check each time a cookie is saved, or refuse to save all cookies.",
+						"numberingSub2": "* Example of setting method (in case of Internet Explorer): Tools at the top of the web browser > Internet Options > Personal Information However, if you refuse to install cookies, it may be difficult to use some services that require login."
+					}
+				},
+				"Chapter8": {
+					"title": "Chapter 8 Technical/Administrative Measures for Protection of Personal Information",
+					"subTitle1": {
+						"title": "[Technical measures]",
+						"numbering1": "1. Members' personal information is protected by a password, and personal information data is protected through a separate security function.",
+						"numbering2": "2. For member passwords, password creation rules are established and implemented so that users and personal information managers do not use easy-to-guess numbers such as birthdays and phone numbers as passwords.",
+						"numbering3": "3. The company uses antivirus programs and malware defense software to prevent damage caused by computer viruses, and the software is updated regularly every day.",
+						"numbering4": "4. The company protects personal information on the network twice by using routers and L3 switch equipment equipped with intrusion prevention and intrusion detection functions.",
+						"numbering5": "5. The company operates a triple personal information protection system by building a separate firewall.",
+						"numbering6": "6. The company encrypts and stores personal information in the personal information protection system, and operates the system to encrypt and store personal information when transmitting or storing personal information outside the company's information and communications network."
+					},
+					"subTitle2": {
+						"title": "[ Administrative measures ]",
+						"numbering1": "1. In addition to the above efforts, members themselves must be careful not to disclose passwords to third parties. In particular, you should always be careful not to leak passwords through PCs installed in public places. It is recommended that you only use the member's ID and password and change the password frequently.",
+						"numbering2": "2. Company has established separate computerized management regulations in the company regulations and complies with the following matters.",
+						"numberingSub1": "- Matters concerning the organization and operation of the personal information protection organization, such as the designation of the person in charge of personal information protection",
+						"numberingSub2": "- Matters related to education of personal information controller",
+						"numberingSub3": "- Maintaining records of access to the personal information processing system and regularly checking and supervising",
+						"numberingSub4": "- Protective measures when printing and copying personal information"
+					}
+				},
+				"Chapter9": {
+					"title": "Chapter 9 Rights of Users and Legal Representatives and Methods of Exercising them",
+					"subTitle1": {
+						"title": "[Technical measures]",
+						"numbering1": "1. Users can inquire or modify their registered personal information at any time, and may request cancellation of membership. In order to view/modify a user's personal information, click 'Change Information' on the company website, or click 'Change Information > Withdrawal of Membership' when canceling membership, and after going through the identity verification process, you can inquire, modify, or withdraw from membership.",
+						"numbering2": "2. Requests for inquiry, correction, withdrawal, and suspension of processing of personal information will be taken within 10 days and the result of processing will be notified.",
+						"numbering3": "3. The department and person in charge of receiving and processing requests for inquiry, correction, withdrawal, and suspension of processing of personal information are as follows.",
+						"numberingSub1": "- Department: Star Labs Business Strategy Office",
+						"numberingSub2": "- Person in charge: Inseong Kang TEL. 02-6416-4771, E-MAIL. info@starlabs.co.kr",
+						"numberingSub3": "- Address: 7th floor, 6-9, Teheran-ro 25-gil, Gangnam-gu, Seoul, Star Labs",
+						"numbering4": "4. The company handles personal information that has been canceled or deleted at the request of the user as specified in the “period of retention and use of personal information collected by the company” and cannot be viewed or used for any other purpose."
+					},
+					"subTitle2": {
+						"title": "[ About membership registration for children under the age of 14 ]",
+						"subTitle": "Star Labs does not accept membership for children under the age of 14."
+					},
+					"subTitle3": {
+						"title": "[About withdrawal when dealing with minors]",
+						"subTitle": "The company is obliged to obtain the consent of the legal representative (parent) in advance when transacting with a minor, and can cancel the transaction that does not obtain the consent of the legal representative (parent). In addition, if the legal representative (parent) of a minor requests withdrawal within 7 days after the transaction is established, the transaction will be withdrawn (refunded)."
+					}
+				},
+				"Chapter10": {
+					"title": "Chapter 10 Personal Information Protection Officer, Consultation and Report",
+					"subTitle": "In order to protect members' personal information and handle complaints related to personal information, the company has a personal information protection manager. For inquiries regarding members' personal information, please contact the person in charge of personal information protection or the person in charge of personal information protection below"
+				},
+				"Chapter11": {
+					"title": "Chapter 11 Notice"
+				}
+			}
+		},
+		"footerTerms": {
+			"title": "Terms of service",
+			"meta": {
+				"title": "Terms of service",
+				"desc": "Terms of service"
+			},
+			"container": {
+				"title": "Terms of service",
+				"subTitle": "Terms of service",
+				"Article1": {
+					"title": "Article 1 (Purpose)",
+					"desc": "These Terms of Use (hereinafter referred to as “Terms”) relate to the rights of the Company and its members in relation to the use of services and products (hereinafter referred to as “Services”) provided by Star Labs (hereinafter referred to as “company”), for the purpose of stipulating duties and responsibilities."
+				},
+				"Article2": {
+					"title": "Article 2 (Definition)",
+					"desc1": "“Star Labs”: The name of the “company” refers to a company that provides hosting services.",
+					"desc2": "Member: A person who provides personal information or corporate information to the “company” to register as a member and receive services provided by the company.",
+					"desc3": "Membership registration: Refers to the act of registering as a member by providing personal or corporate information through a prescribed procedure provided by the “company”.",
+					"desc4": "Withdrawal of membership: The “company” or the member terminates the service use contract.",
+					"desc5": "Member ID: Refers to a combination of English letters and numbers selected by a member and granted by the “company” for member identification and member service use.",
+					"desc6": "Password: A combination of English alphabet letters and numbers designated by the member to confirm that the member is the same member as the ID given to the member and to protect the member's personal information.",
+					"desc7": "User: A person who uses the service provided by the “company”."
+				},
+				"Article3": {
+					"title": "Article 3 (Publication and Change of Terms and Conditions)",
+					"desc1": "“company” refers to the contents of these Terms and Conditions, name of company and representative, business address (including address where customer complaints can be handled), phone number, fax number, e-mail address, business registration number, mail-order sales business The report number and the person in charge of personal information management are posted on the first screen of the site provided by the “company” so that users can easily find out. However, the contents of the terms and conditions can be viewed by the user through the connection screen.",
+					"desc2": "In the sense that the terms and conditions are disclosed, you agree to the method of posting on the https://hosting.starlabs.co.kr homepage provided by the “company”.",
+					"desc3": "The “company” may amend these Terms and Conditions within the scope of not violating related laws such as the Act on the Regulation of Terms and Conditions.",
+					"desc4": "When the “company” revises the terms and conditions, the effective date and reason for the amendment are specified and notified on the website operated by the “company” up to 7 days prior to the effective date. However, if the contents of the terms and conditions are changed unfavorably to the user, it will be notified with a grace period of at least 30 days in advance.",
+					"desc5": "If the “company” notifies in accordance with Paragraph 4, the member shall be deemed to have agreed if he or she does not express his/her intention to refuse by 7 days after the date of enforcement of the revised terms and conditions. If the member does not agree to the revised terms and conditions, the member may terminate the use contract in accordance with the provisions of Article 7 Paragraph 1.",
+					"desc6": "The terms and conditions notified by the method in Paragraph 3 are also validly applied to existing members.",
+					"desc7": "Matters not stipulated in these Terms and Conditions and interpretation of these Terms and Conditions shall be governed by the Consumer Protection Act in Electronic Commerce, etc., the Act on the Regulation of Terms and Conditions, the Consumer Protection Guidelines in Electronic Commerce, etc. and related laws or commercial practices set by the Fair Trade Commission."
+				},
+				"Article4": {
+					"title": "Article 4 (Membership Procedure)",
+					"desc1": "A Star Labs account means a login account required for a user to use the Star Labs service. A Star Labs account is a schedule entered by the “company” when the user agrees to the terms and conditions and enters the schedule information required to create a Star Labs account. After verifying the information, it is created as a procedure to accept the subscription."
+				},
+				"Article5": {
+					"title": "Article 5 (Rejection and reservation of Star Labs account creation)",
+					"desc1": {
+						"desc": "The “company” may not approve the creation of a Star Labs account by the user in the following cases.",
+						"numbering1": "In case the “company” deletes the user's Star Labs account in accordance with these terms and conditions",
+						"numbering2": "When a user attempts to create a Star Labs account using personal information such as another person's name or e-mail address",
+						"numbering3": "In case of not entering necessary information or entering false information when creating a Star Labs account",
+						"numbering4": "In case of violation of other related laws or standards set by the “company” such as detailed guidelines"
+					},
+					"desc2": "When it is determined that the user has created a Star Labs account in violation of the conditions in Paragraph 1, the “company” may immediately suspend the original user's use of the service or impose appropriate restrictions, such as deleting the Star Labs account.",
+					"desc3": {
+						"desc": "The “company” may suspend the creation of a Star Labs account by the user in the following cases.",
+						"numbering1": "In case the “company” deletes the user's Star Labs account in accordance with these terms and conditions",
+						"numbering2": "When there is no realistic margin for the provided service facility capacity",
+						"numbering3": "If it is determined that there is a problem in the technical part for providing the service",
+						"numbering4": "Other cases deemed necessary financially and technically by the “company”"
+					}
+				},
+				"Article6": {
+					"title": "Article 6 (Management Responsibility for Star Labs Account, etc.)",
+					"desc1": "The Star Labs account can only be used by the member himself, and he cannot allow other people to use his Star Labs account. In addition, members must manage their own passwords so that others cannot use their Star Labs account without permission. The “company” may require password input and additional identification procedures to prevent unauthorized use of the member’s Star Labs account by others. If a member recognizes that the Star Labs account is stolen or is being used by a third party, he or she must immediately take measures such as correcting his or her password, and immediately notify the “company” and follow the instructions of the “company” .",
+					"desc2": "Members can view and modify their information through the setting screen within the service. However, if some information such as Star Labs account, phone number, and other identification information required for the provision and management of the service is modified, additional identification procedures may be required.",
+					"desc3": "The “company” is not responsible for any damage caused by the member's failure to modify the information in the service."
+				},
+				"Article7": {
+					"title": "Article 7 (Provision and Change of Services, etc.)",
+					"desc1": "The use of the service is possible immediately after the approval of the “company” to use the service.",
+					"desc2": "Membership is restricted to minors under the age of 14.",
+					"desc3": "In order to provide better services, the “company” may display various information, including various notices, management messages, and other advertisements, related to the use of the service to the member on the service or send it directly to the member’s e-mail account.",
+					"desc4": "In principle, the service use time is 24 hours a day, 7 days a week (00:00-24:00), except in cases where the business or technology of the “company” is impossible. However, the provision of services may be temporarily suspended for regular or temporary inspections for equipment maintenance or repair or for other significant reasons, in which case, it shall be notified in advance on the service provision screen. If the service is interrupted for reasons that the “company” cannot predict, the “company” will try to restore the service as soon as possible as soon as the “company” understands the situation.",
+					"desc5": "The contents of the service may be changed or the service may be terminated due to reasons such as termination or change of the contract necessary for the provision of the service of the “company” or the start of a new service. Changes or termination of the service shall be notified by posting it on the service provision screen. In case of service change or termination that has a significant impact on members, we will notify you individually through the registered e-mail.",
+					"desc6": "The terms and conditions notified by the method in Paragraph 3 are also validly applied to existing members.",
+					"desc7": "We will compensate for damages suffered by users or third parties due to the temporary suspension of the provision of services under paragraphs 4 and 5. However, this is not the case if the “company” proves that there is no intention or negligence."
+				},
+				"Article8": {
+					"title": "Article 8 (Management of Posts)",
+					"desc1": "In the event that a member's post contains content that violates the Act on Promotion of Information and Communications Network Utilization and Information Protection (hereinafter referred to as the “Information and Communications Network Act”) and the Copyright Act, the author shall notify the “company” in accordance with the procedures stipulated by the relevant law. You can request suspension or deletion of postings, and the “company” will take action in accordance with the relevant laws.",
+					"desc2": "Even if there is no request from the author, the “company” may take temporary measures against the posting in accordance with the relevant laws if there is a reason for the infringement of rights or if it violates other policies and related laws of the “company”."
+				},
+				"Article9": {
+					"title": "Article 9 (Attribution of Rights and Use of Works)",
+					"desc1": "Copyright of posts posted by members within the service belongs to the author of the post.",
+					"desc2": "Posts, etc. may be exposed on the Internet site operated by the “company”. To the extent necessary for such exposure, it may be partially modified, reproduced, edited and published. In this case, the “company” complies with the provisions of the Copyright Act, and the member can take measures such as deletion of the post at any time through the customer center or the management function within the service.",
+					"desc3": "If the “company” intends to use the member's posts, etc. in a way other than paragraph 2, it obtains the member's consent in advance through telephone, fax, e-mail, etc."
+				},
+				"Article10": {
+					"title": "Article 10 (Restriction and Suspension of Service Use",
+					"desc1": {
+						"desc": "The “company” may restrict or suspend the member's use of the service in the event of any of the following reasons.",
+						"numbering1": "In case of registering false information when applying for membership",
+						"numbering2": "If a member intentionally or negligently interferes with the operation of the “company” service",
+						"numbering3": "If a member violates the obligations of Article 12",
+						"numbering4": "In case of unavoidable circumstances due to service facility inspection, repair or construction",
+						"numbering5": "If the key telecommunication service provider stipulated in the Telecommunications Business Act has stopped telecommunication service",
+						"numbering6": "When there is a problem with the use of the service due to a national emergency, a failure of the service facility, or congestion of the service use",
+						"numbering7": "If the company deems it inappropriate to continue providing services for other significant reasons",
+						"numbering8": "When a member dies"
+					},
+					"desc2": "When the “company” restricts or suspends the use of the service according to the provisions of the preceding paragraph, it must notify the member of the reason and period of restriction.",
+					"desc3": "After the “company” restricts or suspends membership, if the same action is repeated twice or more or the cause is not corrected within 30 days, the “company” may lose membership.",
+					"desc4": "If the “company” decides to terminate and withdraw from the contract with the member pursuant to Article 15 (2), the “company” notifies the member, and sets a period of at least 30 days before the cancellation of membership registration It gives you a chance to do it.",
+					"desc5": "The company may restrict the posting if it recognizes that the posts posted in the service infringe the rights of third parties, such as invasion of privacy or defamation.",
+					"desc6": "However, if the expiration date of the service the member is using at the “company” has not passed, the “company” does not process the withdrawal."
+				},
+				"Article11": {
+					"title": "Article 11 (Obligations of the “company”)",
+					"desc1": "The “company” must faithfully implement measures such as maintenance, inspection, or restoration to ensure that the facilities related to the provision of services and security of the “company” are suitable for continuous and stable service provision.",
+					"desc2": "The “company” does not send commercial e-mails or SMS text messages for commercial purposes that members do not agree to receive.",
+					"desc3": "The “company” does not disclose or distribute the personal information of the member that it learns in connection with the provision of the service to a third party without his/her consent, and strives to protect it. Other matters are subject to the Information and Communications Network Act and the “Personal Information Protection Guidelines” separately set by the company."
+				},
+				"Article12": {
+					"title": "Article 12 (Responsibilities of Members)",
+					"desc1": {
+						"desc": "Members must not engage in any of the following acts.",
+						"numbering1": "Act of registering false information when applying for or changing membership",
+						"numbering2": "Acts that infringe the rights of the “company” or third parties, such as posting false facts about third parties or infringing intellectual property rights",
+						"numbering3": "The act of using the service unfairly by stealing another member's ID and password",
+						"numbering4": "Sending junk mail, spam mail, e-mails containing obscene or violent messages, or disclosing or posting other information contrary to public order and morals",
+						"numbering5": "Act of transmitting or posting information (computer programs, etc.) that is prohibited to be transmitted or posted under relevant laws such as the Information and Communications Network Act",
+						"numbering6": "posting of media harmful to juveniles as stipulated by the Juvenile Protection Act",
+						"numbering7": "Acts that interfere with other members' use of services",
+						"numbering8": "Act of collecting, storing, and disclosing other members' personal information without consent",
+						"numbering9": "Acts that violate the current laws, the terms and conditions stipulated by the service provided by the company, and other service usage regulations"
+					},
+					"desc2": "The “company” may delete or temporarily delete the postings, etc., if the member performs the acts in paragraph 1, restrict the use of the service, or unilaterally terminate this contract."
+				},
+				"Article13": {
+					"title": "Article 13 (Payment of usage fee)",
+					"desc1": "In principle, when a member uses a paid service among the services provided by the “company”, he/she uses the service after paying the usage fee.",
+					"desc2": "The “Company” may additionally request the member’s personal information necessary for payment, and the member must accurately provide the personal information requested by the “Company”. The “Company” shall not be held responsible for compensating for damages to members unless there is intention or negligence on the part of the “Company” for damages caused to members due to the personal information provided by the member falsely or inaccurately."
+				},
+				"Article14": {
+					"title": "Article 14 (Refund of service fee and objection)",
+					"desc1": "Refunds and objections to service fees are subject to the terms of service for each content."
+				},
+				"Article15": {
+					"title": "Article 15 (Termination of Use Agreement)",
+					"desc1": "When a member wishes to terminate the service use contract, he or she may delete the member's information and withdraw from membership at any time according to the procedure set by the “company” in the member information management.",
+					"desc2": "If a member violates the provisions of Article 12, the “Company” may unilaterally terminate this contract, and if there is any damage to the service operation as a result, civil and criminal liability may also be imposed.",
+					"desc3": "If there is no record of logging in to the service of the “company” to use the service for 6 consecutive months while the member is using the service, the “company” may lose the member's membership.",
+					"desc4": "Cancellation of the paid service use contract is established by the member's application for service cancellation and the consent of the “company”. The effect of termination occurs when the “Company” approves, and if there is an amount to be refunded, the provisions of Article 14 shall be followed.",
+					"desc5": "If this contract of use is terminated, all posts, etc. registered in the member's account will be deleted. However, posts scrapped and posted by other members or registered on public bulletin boards are not deleted."
+				},
+				"Article16": {
+					"title": "Article 16 (Protection of Personal Information)",
+					"desc1": "“company” collects the minimum amount of personal information to the extent necessary to provide services when collecting personal information of users.",
+					"desc2": "“company” does not collect in advance the information necessary to fulfill the purchase contract when registering for membership. However, this is not the case in cases where identification is required prior to a purchase contract in order to fulfill the obligations under the relevant laws and regulations, and the minimum amount of specific personal information is collected.",
+					"desc3": "When the “company” collects and uses a user's personal information, it notifies the user of the purpose and obtains consent.",
+					"desc4": "“company” cannot use the collected personal information for any purpose other than the intended purpose, and when a new purpose of use occurs or if it is provided to a third party, the purpose is notified to the user at the stage of use and provision and consent is obtained . However, there are exceptions if there are other provisions in the relevant laws and regulations.",
+					"desc5": "If the “company” needs to obtain the user's consent pursuant to paragraphs 2 and 3, the identity of the person in charge of personal information management (affiliation, name and phone number, other contact information), the purpose of information collection and use, and the Matters stipulated in Article 22 (2) of the 「Act on Promotion of Information and Communications Network Utilization and Information Protection, Etc.」, such as matters related to information provision to third parties (recipient, purpose of provision, and content of information to be provided), must be specified or notified in advance. You may withdraw this consent at any time.",
+					"desc6": "The user may at any time request to view and correct errors in his/her personal information possessed by the “company”, and the “company” is obliged to take necessary measures without delay. If the user requests correction of an error, the “company” does not use the personal information until the error is corrected.",
+					"desc7": "For the protection of personal information, the “company” limits the persons handling the user's personal information to a minimum and safely manages the user's personal information, including credit cards and bank accounts.",
+					"desc8": "“company” or a third party who has received personal information from the “company” destroys the personal information without delay when the purpose of collection or provision of personal information has been achieved.",
+					"desc9": "“company” does not set the consent box for collection, use, and provision of personal information to be selected in advance. In addition, it specifies the services that are restricted when users refuse to consent to the collection, use, and provision of personal information, and provides services such as membership registration due to the user's refusal to consent to the collection, use, and provision of personal information, which is not a mandatory collection item. We do not restrict or decline offers."
+				},
+				"Article17": {
+					"title": "Article 17 (Immunity)",
+					"desc1": {
+						"desc": "The “company” shall not be held responsible for any damages incurred by the member if the service cannot be provided in the following cases.",
+						"numbering1": "In case of natural disaster or force majeure equivalent thereto",
+						"numbering2": "If there is a problem in using the service due to reasons attributable to the member",
+						"numbering3": "Damages caused by a third party illegally accessing or using the server of the “company”",
+						"numbering4": "Damages caused by a third party interfering with transmission to or from the “Company” server",
+						"numbering5": "Damages caused by the transmission or distribution of malicious programs by a third party",
+						"numbering6": "Damage caused by omission, omission or destruction of transmitted data",
+						"numbering7": "Damages caused by a third party using the service, such as defamation",
+						"numbering8": "Other damages caused by reasons not intentional or negligent of the “company”"
+					},
+					"desc2": "“company” does not make any commitments or warranties for any specific matters not specified in these terms and conditions in relation to the service to the extent permitted by law."
+				},
+				"Article18": {
+					"title": "Article 18 (Dispute Settlement)",
+					"desc1": "The “company” installs and operates a damage compensation processing organization to reflect legitimate opinions or complaints raised by users and compensate for the damage.",
+					"desc2": "The “company” handles complaints and opinions submitted from users preferentially. However, if prompt processing is difficult, the reason and processing schedule will be immediately notified to the user"
+				},
+				"Article19": {
+					"title": "Article 19 (Jurisdiction and Governing Law)",
+					"desc1": "Litigation related to e-commerce disputes between the “company” and users shall be based on the address of the user at the time of filing, and if there is no address, the district court having jurisdiction over the place of residence shall have exclusive jurisdiction. However, if the address or residence of the user is not clear at the time of filing, or if the user resides in a foreign country, the complaint shall be submitted to the competent court under the Civil Procedure Act.",
+					"desc2": "Korean law applies to e-commerce lawsuits filed between the “company” and users."
+				}
+			}
+		},
+		"footerTermsHosting": {
+			"title": "Terms of hosting",
+			"meta": {
+				"title": "Terms of hosting",
+				"desc": "Terms of hosting"
+			},
+			"container": {
+				"sub_title1": "Chapter 1: General Provisions",
+				"Article1": {
+					"title": "Article 1 (Purpose)",
+					"desc": "These Terms and Conditions stipulate the rights, obligations, responsibilities, and other matters regarding the use of the service between Star Labs Co., Ltd. (hereinafter the “Company”) that provides the hosting service (hereinafter the “Service”) and the customer who uses the above service (hereinafter the “Customer”). intended to do."
+				},
+				"Article2": {
+					"title": "Article 2 (Definition of Terms)",
+					"numbering1": "Definitions of terms used in these Terms and Conditions are as follows.",
+					"numberingSub1": "Hosting service: A service that the company provides server space to customers and provides basic or additional services so that customers can operate the website.",
+					"numberingSub2": "Server: Refers to the management software or hardware configured so that the customer can operate the website.",
+					"numberingSub3": "Customer: A person who receives service after signing a service use contract with the company.",
+					"numberingSub4": "Use contract: Refers to a contract concluded between the company and the customer in relation to the use of the service.",
+					"numberingSub5": "ID: A combination of letters and numbers provided to customers for identification and service use.",
+					"numberingSub6": "PASSWORD: A combination of letters and numbers provided to the customer to protect the customer's personal information and rights and interests, and is used to verify the customer's identity together with the customer's ID.",
+					"numberingSub7": "Exemption fee: Refers to the fee that the customer is earning unfairly by illegally evading the usage fee to be paid to the company in accordance with the provisions of these terms and conditions.",
+					"numberingSub8": "Connection address (link): Refers to the access address or the connection method that allows you to view the contents by accessing the browser.",
+					"numbering2": "Except as provided in the preceding paragraph, it shall be subject to the provisions of related laws and other service-specific information."
+				},
+				"Article3": {
+					"title": "Article 3 (Explanation and Change of Terms and Conditions)",
+					"numbering1": "The company may revise these terms and conditions to the extent that it does not violate the relevant laws and regulations if a reasonable cause occurs.",
+					"numbering2": "When the company revises the terms and conditions, the effective date and reason for the revision shall be specified and posted together with the current terms and conditions on the initial screen of the company's website for at least 7 days prior to the effective date.",
+					"numbering3": "If the customer does not agree to the changed terms and conditions, he/she may request to terminate the use contract, and if the customer continues to use the service without expressing refusal even after 7 days from the effective date of the changed terms, he/she will be deemed to have agreed to the changes to the terms and conditions."
+				},
+				"Article4": {
+					"title": "Article 4 (Application other than the terms and conditions)",
+					"desc": "Matters not specified in these terms and conditions will be subject to relevant laws, commercial practices, and guidance for each service."
+				},
+				"sub_title2": "Chapter 2 Use Agreement",
+				"Article5": {
+					"title": "Article 5 (Service Types and Changes)",
+					"numbering1": "The company publishes the service type, service content, price and other service-related matters through the company's website (https://hosting.starlabs.co.kr), and the customer must apply for service use based on the company's website.",
+					"numbering2": "In addition, the company posts new service types or other changes through the website, and changes to services for customers who are already using the service are posted on the website or notified through the customer's e-mail address, 7 days after posting or notification If there is no objection within this period, the customer is deemed to have agreed to the changes."
+				},
+				"Article6": {
+					"title": "Article 6 (Application for Use and Agreement to Terms and Conditions)",
+					"numbering1": "Application for use consists of the customer agreeing to these terms and conditions, filling out the application form set by the company on the Internet, and applying. Agreeing to these terms of use is expressed by clicking the ‘I agree’ button on the company website at the time of application for use.",
+					"numbering2": "Customers must enter their real name and actual information when applying for use. Customers who violate this cannot receive legal protection and may be restricted from using the service.",
+					"numbering3": "The personal information provided by the customer when applying for use is protected in accordance with the relevant laws and the company's personal information protection policy."
+				},
+				"Article7": {
+					"title": "Article 7 (Approval of Application for Use)",
+					"numbering1": "When a customer applies for use by accurately filling out the matters set forth in Article 6, the company accepts the application for use in the order of receipt unless there are special circumstances.",
+					"numbering2": "The company does not approve the following items.",
+					"numberingSub01": "If you apply for the service under a non-real name",
+					"numberingSub02": "If you applied for service using someone else's name",
+					"numberingSub03": "In case of false information in the application form",
+					"numberingSub04": "If it is judged that there is a problem with the service operation of other customers",
+					"numbering3": "If you are in arrears with the company's other service usage fees",
+					"numberingSub1": "The company may withhold approval in the following cases.",
+					"numberingSub2": "If it is difficult to accept the use due to company circumstances"
+				},
+				"Article8": {
+					"title": "Article 8 (Term of Use and Service Opening)",
+					"numbering1": "In the contract of use, the customer applies for the Internet application service, pays the fee in Article 23 Paragraph 2, and accepts it.",
+					"Numbering 2": "Install the service contract according to the customer's application within 2 business days (based on business days) of the date of confirmation of the fee reserve in the preceding paragraph, and the service opening is done by e-mail. . Service opening paid service fee settlement You don't have to.",
+					"numbering3": "To you, such as by e-mail, revisiting the opening hours with him as a musician who opened the service in accordance with paragraph 2."
+				},
+				"Article9": {
+					"title": "Article 9 (Server environment support and service transfer)",
+					"numbering1": "The company must support the optimal server environment so that the customer can operate the website normally, but the company does not respond to the customer's request for a special server environment. However, if agreed with the customer under a separate contract is an exception.",
+					"numbering2": "If the service is transferred to a third party, even if the connection is interrupted for 1 to 2 days without the fault of the company due to the cache of the name server, etc., this is a characteristic of the Internet environment, so the company is not responsible for it. In addition, in connection with the transfer, the transfer of the files used in the past and the task of setting permissions must be done by the customer himself."
+				},
+				"sub_title3": "Chapter 3 Obligations",
+				"Article10": {
+					"title": "Article 10 (Obligations of the Company)",
+					"numbering1": "The Company must reliably and continuously provide the services set forth in these Terms to its customers.",
+					"numbering2": "In the event of a failure that interferes with the operation of the service, the company must immediately repair or restore it, and do its best for stable service operation.",
+					"numbering3": "The company must deal with opinions or complaints that are legitimately requested by customers immediately or according to the period and procedures set by the company.",
+					"numbering4": "The company collects and stores customers' personal information for smooth service application and operation, and cannot provide it to a third party without the user's permission. B. At the request of the Korea Communications Standards Commission, there is an exception in the case of providing the company's usage fee to a credit information service provider or credit information concentration institution in arrears.",
+					"numbering5": "The company strives to provide convenience to customers in terms of procedures and contents related to contracts with customers, such as the conclusion of the contract of use, changes and termination of contract matters."
+				},
+				"Article11": {
+					"title": "Article 11 (Obligations of Customers)",
+					"numbering1": "The customer is obliged to pay the service fee set by the company on the specified date.",
+					"numbering2": "The customer shall not provide the services provided by the company to a third party without the consent of the company.",
+					"numbering3": "The customer shall not engage in any conduct that interferes with the operation of the service of the company and of other customers.",
+					"numbering4": "The customer has the obligation to separately store the data of the service he is operating, and the company is not responsible for leakage, omission, or loss of data due to external intrusion, etc. However, the company is not responsible for the data If you back up and keep it separately, we can help you with recovery, and the company is not responsible if there is no backup data.",
+					"numbering5": "Customers cannot leak their IDs and passwords to third parties, and the customer is responsible for any damage caused by the leak.",
+					"numbering6": "Customers are responsible for the copyright of information provided through their website and must not engage in illegal activities.",
+					"numbering7": "If there is a change in the information provided to the company at the time of service application, the customer shall correct and supplement it as soon as possible through the relevant procedure, and the customer is responsible for any problems resulting therefrom.",
+					"numbering8": "If the customer loses, damages, or causes a failure of the equipment, account and software provided by the company, the customer shall bear the cost of replacement, repair or other construction.",
+					"numbering9": "The customer cannot transfer or gift the right to use the service or other status in the contract of use to another person, and cannot provide it as collateral without the express consent of the company."
+				},
+				"Article12": {
+					"title": "Article 12 (Customer Responsibility for Domain Management)",
+					"numbering1": "The customer must thoroughly manage the payment date of the domain maintenance fee and pay the domain maintenance fee within the payment date, and any problems arising from failure to do so are the responsibility of the customer.",
+					"numbering2": "The company only performs domain registration on behalf of the customer at the request of the customer, and after domain registration, it is the customer's responsibility to manage the domain, such as changing registration information and paying the domain maintenance fee. If the customer's personal information is changed after domain registration, immediately You must apply for a change of personal information to keep the latest information, and problems arising from failure to comply are the responsibility of the customer.",
+					"numbering3": "The customer must directly check whether the requested domain is registered and whether there is any abnormality in the registration information through a domain search within 3-4 days after application. The customer must notify the company that registered the domain for action.",
+					"numbering4": "Due to the nature of the hosting service that uses a static IP (IP), personal information related to the customer's domain using a static IP address or the administrator information of the user organization is provided by the whois service of the Internet address management organization. can be provided to the minimum extent."
+				},
+				"Article13": {
+					"title": "Article 13 (Prohibition of Attribution and Infringement of Intellectual Property Rights)",
+					"numbering1": "Copyrights and other intellectual property rights for works created by the company belong to the company. The customer must not infringe the intellectual property rights of the company and third parties.",
+					"numbering2": "Customers and visitors to the company's website must not use the information obtained through the use of the company's services for profit-making purposes by copying, transmitting, publishing, distributing, broadcasting or other methods without the company's prior consent, or allowing a third party to use it ."
+				},
+				"sub_title4": "Use Chapter 4",
+				"Article14": {
+					"title": "Article 14 (Service Hours)",
+					"desc": "Service use is provided 24 hours a day, 7 days a week, in principle, unless there is a special problem in the company's business or technology, but the service may be temporarily suspended on days or times that require regular inspection or system upgrade, Temporary service suspension due to scheduled work will be notified in advance through the company website."
+				},
+				"Article15": {
+					"title": "Article 15 (Suspension of Service)",
+					"numbering1": "The company may temporarily suspend the service without notice due to unavoidable reasons such as urgent system inspection, expansion and replacement, etc. It can be completely stopped.",
+					"numbering2": "The company may temporarily suspend the provision of services in the following cases. In the event of a service interruption, the company must notify the customer of this fact in advance or afterward by e-mail, etc., and the company operates It can be replaced by posting it through our website.",
+					"numberingSub1": "In case of unavoidable maintenance or construction of server equipment",
+					"numberingSub2": "if there is a failure on the leased line path",
+					"numberingSub3": "In case of mechanical failure due to natural disasters, national emergencies, etc.",
+					"numbering3": "The company cannot give advance notice in case of service interruption due to reasons beyond the control of the company (system administrator's intentional or negligible disk failure, system down, etc.) In case of system interruption due to intentional or negligence of the operator, etc.), we will not notify you."
+				},
+				"sub_title5": "Chapter 5 Restrictions on Use",
+				"Article16": {
+					"title": "Article 16 (Restriction of Use)",
+					"numbering1": "The company may temporarily suspend the service without notice due to unavoidable reasons such as urgent system inspection, expansion and replacement, etc. It can be completely stopped.",
+					"numberingSub1": "In case of a material breach of the customer's obligations under Article 11",
+					"numberingSub2": "In case of illegal acts such as leaking other people's information or stealing passwords",
+					"numberingSub3": "In case of violating the relevant laws",
+					"numberingSub4": "In the case of posting obscene and sexually suggestive photos or texts, or committing acts that violate public order or morals",
+					"numberingSub5": "In case of providing bulletin board, access statistics, counter, forwarding, redirection service, etc. to a third party without the company's consent",
+					"numberingSub6": "In case the server's CPU and memory share exceeds 10% due to program malfunction or excessive use due to intentional or gross negligence",
+					"numberingSub7": "If the number of daily visitors, daily file transfer, account capacity, etc. are specified in the type of service and exceed the previously announced usage range",
+					"numberingSub8": "In case of excessive use of functions or programs that put a load on the server (video and image upload/download, link and sharing, broadcasting, chatting, game, community, etc.)",
+					"numberingSub9": "In case of damage to services using the same server because the share of server resources and load ratio are relatively high compared to normal websites",
+					"numberingSub10": "In case of overloading by excessive use only on a specific date and specific time",
+					"numberingSub11": "In case of excessive use of overseas networks without a separate contract or prior notice",
+					"numberingSub12": "If it causes a significant disruption to the use of equipment that directly or indirectly uses the service provided by the company",
+					"numberingSub13": "Sending spam, spreading viruses, or other acts that cause network failure",
+					"numberingSub14": "If the customer does not pay the service fee even after the expiration of the service period",
+					"numberingSub15": "If it is objectively determined that the service is used for criminal purposes",
+					"numberingSub16": "A random daemon (a number used to identify each service in the system) that the customer uses other than the default port (telnet, FTP, web, etc.) without the company's permission. program used to respond and communicate according to pre-specified rules to the request of",
+					"numberingSub17": "An act that violates any other rules or conditions of use set by the company, including these terms and conditions"
+				},
+				"Article17": {
+					"title": "Article 17 (Usage Restriction and Removal Procedure)",
+					"numbering1": "If the company restricts the use in accordance with Article 16, it may restrict the use of the service after notifying the customer or agent of the reason and period, etc., but the system is operated due to the customer's malfunction or excessive use Notwithstanding the provisions of Article 18, if it causes a significant obstacle to the customer, or if the matter is urgent, we may first suspend the service to the customer and then notify it afterwards.",
+					"numbering2": "If the customer whose service is restricted in accordance with the preceding paragraph resolves the violation, the company immediately lifts the service use restriction in accordance with the relevant procedures."
+				},
+				"Article18": {
+					"title": "Article 18 (Procedures for Restriction and Removal of Use of Customers Exceeding Service)",
+					"numbering1": "The company notifies the customer who exceeds the contract (traffic, capacity, etc.) or excessive server resource usage of the requested service to the contact number registered with the company, and the customer receives the initial notification 24 hours after receiving the notification You must apply for a higher service within the limit or adjust it below the current service allowance by removing the cause of overload due to excessive or excessive use.",
+					"numbering2": "If the customer does not fulfill the obligations in the preceding paragraph even after receiving notification of excessive service or excessive use of server resources, the company may temporarily restrict the customer's use of the service, and if the customer resolves the reason for restriction will immediately lift the restrictions on use in accordance with the relevant procedures."
+				},
+				"sub_title6": "Chapter 6 Contract Change and Cancellation/Termination",
+				"Article19": {
+					"title": "Article 19 (Changes in Contract Matters)",
+					"desc": "If the customer wants to change any of the following items in the contract, he or she must immediately apply for the change in accordance with the relevant procedure, and the cost of the change must be borne by the customer.",
+					"numbering1": "Change of name, name or address of the customer and of the person who is in fact responsible for the payment of charges",
+					"numbering2": "Change of contract type (connection type, connection line, connection line speed, period of use contract, purpose of use)",
+					"numbering3": "Change the installation of a domain or account"
+				},
+				"Article20": {
+					"title": "Article 20 (Renewal of Contract)",
+					"desc": "The company and the customer can set the term of the contract by agreement, and if the customer or the company does not express their intention not to renew the contract by the day before the expiration of the contract period, the term of the contract is considered to be extended under the same conditions. "
+				},
+				"Article21": {
+					"title": "Article 21 (Succession of Customer's Legal Status)",
+					"desc": "When a cause for the succession of a customer's legal status occurs due to inheritance, merger, division, business takeover, etc. You must apply according to the procedure designated by the company with the relevant documents attached."
+				},
+				"Article22": {
+					"title": "Article 22 (Termination of Use Agreement)",
+					"numbering1": "If the customer wants to cancel the service contract, he must notify the company according to the procedure and method notified in advance by the company, and the company will settle the usage fee in accordance with Article 25.",
+					"numbering2": "The company may terminate the use contract without prior notice if the customer falls under any of the following subparagraphs. The company may refuse to accept use if the customer whose use contract has been canceled as above applies for use again. can.",
+					"numberingSub1": "If the information provided in the application form is found to be false",
+					"numberingSub2": "In the case of intentionally interfering with the operation of the service and causing significant damage to the company",
+					"numberingSub3": "If the reason for the use restriction is not resolved within the use restriction period after the use is restricted according to Article 16",
+					"numberingSub4": "In case of violation of Article 13",
+					"numbering3": "To the extent permitted by law, the “Company”  makes no commitments or warranties with respect to any specific matters not specified in these Terms and Conditions in relation to the Services."
+				},
+				"sub_title7": "Chapter 7 Fees",
+				"Article23": {
+					"title": "Article 23 (General Principles of Charges)",
+					"numbering1": "Details of service fee and its changes are specified on the company's website in accordance with Article 5.",
+					"numbering2": "The types of service charges that the customer must pay are as follows.",
+					"numberingSub1": "Installation fee : Fee paid when new service is opened or reinstalled or changed during service use",
+					"numberingSub2": "Hosting fee : basic fee determined by service type",
+					"numberingSub3": "Additional fee : service fee exceeding the service standard or additional service fee",
+					"numbering3": "The installation fee in Paragraph 2, Item 1 is a one-time payment for new service or installation change work, and is non-refundable after payment.",
+					"numbering4": "Payment of the service fee is in principle in advance, but it can be paid in arrears according to the company's policy or service type."
+				},
+				"Article24": {
+					"title": "Article 24 (Payment of usage fee)",
+					"numbering1": "The customer is obliged to notify the company when the company pays the service fee under a name that is difficult to recognize. Disadvantages such as suspension are the responsibility of the customer.",
+					"numbering2": "The customer must pay the usage fee on the set payment date. Failure to pay this may result in the restriction of service use in accordance with Article 16 or the termination of the contract of use pursuant to Article 22 paragraph 2. If you want to reuse it afterward, you must apply for a new service again."
+				},
+				"Article25": {
+					"title": "Article 25 (Method of Settlement of Charges)",
+					"numbering1": "The payment date and amount are calculated according to the payment cycle set by the company based on the service opening date + 1 day.",
+					"numbering2": "If the prepaid customer changes or cancels the service while using the service, the current service usage amount and balance are calculated as follows.",
+					"numberingSub01": "Amount used = [Prepaid monthly installment amount x number of months used up to the previous month] + [prepaid daily installment amount x number of days used in the current month]",
+					"desc1": "* Monthly advance payment = [advance payment amount / advance payment month]",
+					"desc2": "* Advance payment daily amount = [Monthly advance payment amount / 30 days]",
+					"desc3": "* If there is an overused resource, the amount used will be settled by replacing the resource usage with a prorated calculation.",
+					"numberingSub02": "Balance = Prepayment Amount - Usage Amount",
+					"desc": "However, if a customer who cancels or changes to a sub-service receives a discount rate applied to the prepayment amount, the amount used is calculated based on the normal amount to which the discount rate is not applied.",
+					"numbering3": "If the customer who has paid the service fee in advance cancels the service while using the service, the usage fee is calculated on a pro-rata basis from the start date to the date of cancellation based on the company's normal monthly fee to which the discount rate is not applied. 90% of the balance excluding the usage amount from the prepaid usage fee will be refunded within 15 days from the date of application for cancellation. It will be treated as a penalty.",
+					"numbering4": "If a customer who pays in arrears changes or cancels the service while using the service, the calculation of the service usage amount for the month is as follows.",
+					"numberingSub1": "Service change usage amount Change usage amount = [Existing service usage fee ÷ 30 days x number of service days in the current month] + [new service usage fee ÷ 30 days x remaining service days in the current month]",
+					"numberingSub2": "Service cancellation usage amount Cancellation usage amount = current monthly service usage fee ÷ 30 days x current monthly service usage days"
+				},
+				"Article26": {
+					"title": "Article 26 (Regulations for Overdue Charge Management)",
+					"numbering1": "If the customer does not pay the service fee even after the expiration of the service period, the future service use is restricted. can.",
+					"numbering2": "The company may request a debt collection service from a credit information company in order to recover overdue charges for customers who are overdue for service charges, etc."
+				},
+				"Article27": {
+					"title": "Article 27 (Imposition of Delayed Damage)",
+					"numbering1": "If the customer does not pay the usage fee by the due date specified in the invoice, the company may charge the customer an amount equivalent to 3/100 of the usage fee as a delay loss.",
+					"numbering2": "Due to the provisions of Paragraph 1, damages for delay can be claimed in addition to the overdue service charge based on the day following the expiration of the payment date of the service charge."
+				},
+				"Article28": {
+					"title": "Article 28 (Collection of Exemption Fee)",
+					"desc": "If the customer violates the provisions of these Terms and Conditions to evade the service fee, the company may charge an amount equal to twice the amount evaded."
+				},
+				"sub_title8": "Chapter 8 Indemnification and Indemnification",
+				"Article29": {
+					"title": "Article 29 (Liability and Scope of Damages)",
+					"desc": "In the event that the customer cannot use the service for reasons attributable to the company, the company shall notify the customer of the fact to the company in accordance with the procedures set by the company 5 of the amount calculated by multiplying the average daily rate for the last 3 months (if the period is less than 3 months, the relevant period is applied) for the service suspension time of 4 hours or more Compensation will be paid after consultation within the scope of the ship. In this case, if the number of steps is less than 1 hour, it will be 1 hour."
+				},
+				"Article30": {
+					"title": "Article 30 (Customer's Claim for Damages)",
+					"desc": "The customer's claim for damages must be made in writing by specifying the reason for the claim, the amount of claim and the basis for calculation."
+				},
+				"Article31": {
+					"title": "Article 31 (Claim for Damages to Customers)",
+					"desc": "If a customer violates the obligations stipulated in Article 11, Paragraphs 2 through 9, and causes damage to the Company, the Company may claim damages against the customer."
+				},
+				"Article32": {
+					"title": "Article 32 (Exemption)",
+					"numbering1": "The company is not responsible for any damages that arise from the customer's failure to obtain the expected profit from the company's service provision or the potential value accompanying the service and the selection or use of service materials.",
+					"numbering2": "The company is not responsible for any disruption in service use due to reasons attributable to the customer.",
+					"numbering3": "Company's liability is limited to the use of the physical hosting service, and in particular is not responsible for the content and value of any material posted, transmitted or received by the customer.",
+					"numbering4": "The company is not responsible for any loss caused by the transaction between customers or between the customer and a third party through the service as a medium.",
+					"numbering5": "We will not compensate for damages to the customer's equipment and information caused by illegal intrusion.",
+					"numbering6": "The company is not responsible for any damages in relation to the use of the services provided free of charge to customers.",
+					"numbering7": "The company has no obligation to intervene in disputes arising between the customer and a third party as a medium of service, and is not responsible for compensating for damages resulting therefrom.",
+					"numbering8": "The company shall not be held liable for damages under Article 29 caused by any of the following.",
+					"numberingSub1": "In case of force majeure, such as war, accident, natural disaster, or equivalent national emergency",
+					"numberingSub2": "In case of customer's intention or negligence",
+					"numberingSub3": "In case of failure of telecommunication service provided by other key telecommunication service providers other than the company in accordance with the Telecommunications Business Act and lack of facilities",
+					"numberingSub4": "If the service cannot be provided due to unavoidable reasons due to the nature of the telecommunication service"
+				},
+				"sub_title9": "Chapter 9 Restrictions on Use of Spammer Service",
+				"Article33": {
+					"title": "Article 33 (Definition of Terms)",
+					"numbering1": "Spam: advertising information for commercial purposes that is unilaterally transmitted or posted through information and communications networks despite the user's unwillingness",
+					"numbering2": "Illegal spam: commercial information transmitted or posted in violation of the Act on Promotion of Information and Communications Network Utilization and Information Protection, etc."
+				},
+				"Article34": {
+					"title": "Article 34 (Limitation of Acceptance of Application for Use)",
+					"numbering1": "The company does not accept the customer's application that falls under any of the following items.",
+					"numberingSub1": "If the application is made by falsely providing, omission, or erroneous information, such as the use of a third party or corporate name, etc.",
+					"numberingSub2": "In the case that the 'customer' qualification has been lost from the company pursuant to Article 37. However, a person who has passed one year or more after losing the qualification is an exception."
+				},
+				"Article35": {
+					"title": "Article 35 (Obligations of Customers)",
+					"numbering1": "Customers must not falsely provide personal information necessary for service contract to the company, and when information is changed, it must be updated by notifying the company without delay.",
+					"numbering2": "The customer must not use the service for any purpose other than the company's purpose of providing the service, and must not rent the service to a third party arbitrarily.",
+					"numbering3": "Customers must comply with the company's terms of use and obligations when transmitting advertising information under the Act on Promotion of Information and Communications Network Utilization and Information Protection, etc.",
+					"numbering4": "The customer bears all civil and criminal liability arising from the transmission of spam or illegal spam."
+				},
+				"Article36": {
+					"title": "Article 36 (Suspension of Use)",
+					"numbering1": "The company may suspend the use of the service without delay (full service or partial service) by setting a period of up to one month if the customer falls under any of the following subparagraphs, and the fact that the customer receives the service However, if it is difficult to notify in advance, it may be notified after taking advance measures.",
+					"numberingSub1": "If the Ministry of Information and Security or the Korea Information Security Agency confirms that illegal spam was transmitted and requests suspension of use",
+					"numberingSub2": "In case of sending spam in bulk, causing or likely to cause system failure",
+					"numberingSub3": "If it is used as a spam relay or is infected with a worm to send spam",
+					"numberingSub4": "In case the recipient of the advertisement requested to refuse the reception, but it was continuously retransmitted, etc.",
+					"numbering2": "The customer must resolve the reason within one month after the suspension of use, and the company enables the use of the service immediately when the reason for suspension of use is resolved."
+				},
+				"Article37": {
+					"title": "Article 37 (Termination of Contract)",
+					"numbering1": "The company may terminate the contract without delay if the customer falls under any of the following subparagraphs, and notifies the customer receiving the service. However, if it is difficult to notify in advance, take advance measures We can notify you.",
+					"numberingSub1": "In case the Ministry of Information and Communication or the Korea Information Security Agency requests the termination of the contract by continuously sending illegal spam even after the suspension period has elapsed",
+					"numberingSub2": "In case of suspension of use twice or more in the current year",
+					"numberingSub3": "When applying for service by providing, omission, or erroneous information, such as not using a real name or using the name of a third party or corporation",
+					"numberingSub4": "If the service is used for purposes other than the company's service provision, or the service is arbitrarily leased to a third party"
+				},
+				"Article38": {
+					"title": "Article 38 (Obligations of the Company)",
+					"numbering1": "The company does not disclose or distribute the customer's personal information known in relation to the provision of the service to a third party without the consent of the person. This is not the case in the case of due process.",
+					"numbering2": "The company conducts regular monitoring to check whether the service is used for the purpose of providing the service.",
+					"numbering3": "If the company confirms that the customer has sent illegal spam, it can report it to the Korea Information Security Agency's Illegal Spam Response Center by attaching related materials."
+				},
+				"Article39": {
+					"title": "Article 39 (Competent Court)",
+					"desc": "Any lawsuit related to disputes related to these Terms and Conditions and the use of the Service shall be brought to the court having jurisdiction over the location of the Company's headquarters."
+				},
+				"Article40": {
+					"title": "Article 40 (Special Terms)",
+					"numbering1": "This Article is a special provision for Articles 1 to 39 (hereinafter referred to as the “Text”), and the contents not stipulated in the main text are supplemented by this Article. do.",
+					"numbering2": "If the contract is terminated pursuant to Article 22, all customer data, such as website data and databases in the customer account, will be completely deleted as of the date of termination, in addition to subscriber information and billing and receipt information that must be kept for a certain period in accordance with the law. If the data is required, the customer must back up the data before applying for cancellation or before the notified ex officio termination date or suspension date.",
+					"numbering02": "However, in the case of Article 16, Paragraph 1, 10., the customer's data is stored for one month from the expiration date of the service period, and the data is completely deleted after one month from the expiration date.",
+					"numbering3": "The customer is responsible for the loss of personal information that occurs after the service is terminated pursuant to Paragraph 2, and the customer cannot claim compensation for this against the company.",
+					"numbering4": "The customer bears the fee for payment when paying the usage fee in accordance with Article 23.",
+					"numbering5": "Confirmation of the usage fee paid in accordance with Article 23 is made within the company's business hours (weekdays 9:00 am to 6:00 pm, Saturday 9:00 am to 2:00 pm), and the next business day upon payment after business close It will be confirmed within business hours.",
+					"numbering6": "In accordance with Article 25, if the service fee is settled within 7 days from the service start date, the company refunds the full amount of the advance payment including the installation fee. However, even within 7 days, the customer uses too many resources If it is determined that Article 11 (3) and (8) have been violated, in accordance with Article 31, the Company may claim damages from the customer.",
+					"numbering7": "In the event that the customer who has paid in advance pursuant to Article 25 Paragraph 2 changes or terminates the service while using the service, the current service usage amount and balance shall be calculated as follows.",
+					"numberingSub1": "Amount used = [Month base price x number of months used up to the previous month] + [prorated amount x number of days used in the current month]",
+					"desc1": "* Prorated amount = Monthly base price / 30 days",
+					"desc2": "* If there is an overused resource, the amount used will be settled by replacing the resource usage with a prorated calculation.",
+					"numberingSub2": "Balance = Prepaid Amount - Usage Amount",
+					"numberingSub02": "However, if a canceled customer or a customer changing to a sub-service receives a discount rate on the monthly base price, the usage amount is calculated based on the normal amount without the discount rate applied.",
+					"numbering8": "In accordance with Article 25 (3), 95% of the balance excluding the usage amount will be calculated and refunded within 15 days from the date of application for cancellation. Non-refundable 5% will be refunded to the customer. This use will be treated as a penalty for canceling the service for reasons attributable to the customer within the agreed period.",
+					"numbering9": "When the company revises the terms and conditions, the effective date and reason for the revision shall be specified and posted together with the current terms and conditions on the initial screen of the company's website for at least 7 days prior to the effective date. will be posted at least 30 days prior to the effective date."
+				}
+			}
+		},
+		"footerAddr0": "Star Labs Co., Ltd. Address",
+		"footerAddr1": "7th floor, Seokam Building, 6-9, Teheran-ro 25-gil, Gangnam-gu, Seoul",
+		"footerCeo0": "CEO",
+		"footerCeo1": "Junho Lee",
+		"footerSaupno0": "Business Number",
+		"footerSaupno1": "514-88-00884",
+		"footerEcommerce0": "E-commerce registration",
+		"footerEcommerce1": "2021-서울강남-05605",
+		"footerEcommerce2": "Business info",
+		"footerCall0": "Call",
+		"footerCall1": "02-6416-4771",
+		"foorerTermsofUseDate": "Terms of Use Enforcement Date: August 01, 2020"
+	},
+	"userLogin": {
+		"title": "Login | Silkroad",
+		"title_desc": "Login page",
+		"loginHolderId": "Please enter your ID.",
+		"loginHolderPasswd": "Please enter a password.",
+		"no_id_txt": "Please type id (E-mail)",
+		"no_pw_txt": "Please type password",
+		"wait": "Please wait",
+		"pleaseAuth": "Please complete email verification.",
+		"expired": "The e-mail has been resent because the authentication time has expired. Please try again after verification is complete."
+	},
+	"userJoinComplete": {
+		"complete": "Membership registration has been completed.",
+		"content1": "Welcome to become a member of Silkroad Global Web Hosting.",
+		"content2": "Enjoy the special benefits of Silk Road Global Web Hosting Site.",
+		"content3": "thank you.",
+		"expired": "Authentication timed out. Please log in and try authentication again.",
+		"alreadyAuth": "You have already signed up. Go to the login page."
+	},
+	"findId": {
+		"title": "Find id | Silkroad",
+		"title_desc": "Find id",
+		"name": "Name",
+		"name_placeholder": "Type name",
+		"phone": "Mobile number",
+		"phone_placeholder": "Type numbers (without - )",
+		"findPw": "Find password",
+		"findPw_desc": "Are you looking for your password?",
+		"valChk_name_empty_msg": "The name is empty",
+		"valChk_name_toolong_msg": "The name must be less than 255 characters.",
+		"valChk_phone_empty_msg": "The phone number is empty",
+		"valChk_phone_toolong_msg": "The phone number must be less than 32 characters.",
+		"valChk_phone_toolong13_msg": "The phone number must be less than 13 characters.",
+		"id_found_title": "Id found",
+		"id_found_msg1": "ID : ",
+		"id_found_msg2": "",
+		"id_not_found_title": "Id not found",
+		"id_not_found_msg": "There is no id matching this infomation"
+	},
+	"findPw": {
+		"title": "Find password | Silkroad",
+		"title_desc": "Find password",
+		"email": "Id(e-mail)",
+		"findId": "Find id",
+		"findId_desc": "Are you looking for your id?",
+		"email_placeholder": "Type Id(e-mail)",
+		"valChk_email_empty_msg": "The id is empty",
+		"valChk_email_toolong_msg": "The id must be less than 255 characters.",
+		"valChk_email_wrong_desc": "Invalid email address. Please check the email address.",
+		"send_mail_success": "A mail for changing password has been sent. Please check your email.",
+		"send_mail_success_req": "A mail for changing password has been sent. Please check your email.",
+		"send_mail_fail": "Changing password has cancelled.",
+		"id_not_found_title": "No matching accounts found",
+		"id_not_found_msg": "There is no account matching that information",
+		"alert_temp_title": "Reset password",
+		"alert_temp_msg": "Would you like to request a password reset to your registered email?"
+	},
+	"changePw": {
+		"title": "Change Password | Silkroad",
+		"title_desc": "Change password",
+		"require_desc": "Changing your password only changes your web login information.",
+		"label_old_pw": "Original password",
+		"label_pw": "New password",
+		"label_pw_confirm": "Confirm password",
+		"txt_pw": "Type original password",
+		"new_txt_pw": "Use mix of 8-15 alphabet, numbers, and special characters.",
+		"new_txt_pw_confirm": "Type new password once again",
+		"new_pw_empty": "New password is empty",
+		"new_cPw_empty": "Confirm password is empty",
+		"match_title": "Change Password ",
+		"match_msg": "The password has been changed.",
+		"not_match_old_pw": "Original password not match",
+		"not_match_new_pw": "New password not match",
+		"not_match_title": "Password mismatch",
+		"not_match_msg": "Password and confirm password do not match",
+		"expired_title": "Validity expired",
+		"expired_msg": "The validity period for changing the password has expired. Request again to reset password.",
+		"success_title": "Success",
+		"success_msg": "Password has been changed. Move to Login page",
+		"failure_title": "Failure",
+		"failure_msg": "Change failed. Please check the passwords match.",
+		"pw_size_error": "Please enter a password within 8 - 15 characters.",
+		"pw_rule_error": "The password must contain all letters, numbers, and special characters.",
+		"pw_korean_error": "Korean characters cannot be used in the password.",
+		"pw_no_space_error": "The password cannot contain spaces."
+	},
+	"applyHead": {
+		"apply": "Application",
+		"pay": "Payment",
+		"comp": "Completion"
+	},
+	"applyHst": {
+		"productInfo": {
+			"productName": "Service name",
+			"quota": "HDD",
+			"traffic": "Traffic (Month)",
+			"domain": "Domain",
+			"domainCnt": "EA"
+		},
+		"accountInfo": {
+			"title": "Account Information (required)",
+			"require": "Account information is required and duplicate IDs are not allowed. Please enter a new ID for each service.",
+			"id": "ID",
+			"newId": "New ID",
+			"passwd": "FTP, Telnet, DB Password",
+			"rePasswd": "FTP, Telnet, DB password verification"
+		},
+		"managerInfo": {
+			"title": "Service Manager Information (required)",
+			"manager": "Manager",
+			"newManager": "New Manager",
+			"name": "Manager name",
+			"email": "Manager email",
+			"phone1": "Manager mobile Number 1",
+			"phone2": "Manager mobile Number 2"
+		},
+		"regionInfo": {
+			"title": "Select Revision (required)",
+			"region": "Region",
+			"domain": "Domain",
+			"freeDomain": "Free Domain",
+			"hasDomain": "Domains held",
+			"selectPeriod": "Select a period",
+			"usePeriod": "Period of use",
+			"price": "Unit price",
+			"period": "Period",
+			"discountRate": "Discount",
+			"amount": "Payment Amount",
+			"month": "month",
+			"discountBefore": "Amount without discount",
+			"discountAfter": "Amount after discount",
+			"promotionPeriod": "Promotion period",
+			"promotionRate": "Promotion discount rate",
+			"accountId": "Account ID"
+		},
+		"placeholder": {
+			"selectAccount": "Select Unused ID",
+			"accountId": "Please enter your ID (4-16 characters/English only)",
+			"passwd": "Enter your password (8-15 characters/mixed English, numbers, and special characters)",
+			"selectManager": "Select an existing manager",
+			"name": "Please enter a name.",
+			"email": "Please enter a email.",
+			"phone": "Please enter without '-'.",
+			"selectRegion": "Choice"
+		},
+		"won": " KRW",
+		"finalAmount": "Final Payment Amount",
+		"productAmount": "Total Product Amount",
+		"discountAmount": "Total discount amount",
+		"installCost": "installation costs",
+		"svcTerms": "Terms of Service",
+		"svcTermsDesc": "I have confirmed and agree to the Terms of Service.",
+		"nextBtn": "Next step",
+		"empty": {
+			"accountId": "Please enter your account ID.",
+			"passwd": "Please enter your account password.",
+			"rePasswd": "Please enter your account password one more time.",
+			"name": "Please enter the administrator name.",
+			"email": "Please enter an administrator email.",
+			"phone1": "Enter administrator mobile phone 1.",
+			"phone2": "Enter administrator mobile phone 2.",
+			"region": "Please select Lizen.",
+			"domain": "Please enter your domain.",
+			"payMethod": "Please select a payment method.",
+			"hostingData": "There is no hosting data.",
+			"hostingManagerData": "Hosting Manager data not found."
+		},
+		"validation": {
+			"accountId": "The ID format is not valid.",
+			"email": "The email format is not valid.",
+			"passwd": "The password format is not valid. (8-15 characters/characters, numbers, and special characters mixed)",
+			"rePasswd": "Passwords do not match.",
+			"domain": "The domain format is not valid.",
+			"phone": "The mobile number format is not valid."
+		},
+		"duplicate": {
+			"accountId": "The account already exists.",
+			"domain": "The domain already exists."
+		},
+		"agree": {
+			"serviceTerms": "Please accept the terms of service."
+		},
+		"saveHosting": "Hosting information has been saved.",
+		"wrongHosting": "The hosting information is not valid."
+	},
+	"paymentHst": {
+		"payRequest": "Payment request",
+		"svcApplyInfo": {
+			"title": "Service Application Information",
+			"serviceName": "Service name",
+			"buyerName": "Buyer Name",
+			"buyerEmail": "Buyer Email",
+			"buyerTel": "Buyer Contact",
+			"domain": "Domain",
+			"period": "Service Period",
+			"amount": "Payment Amount"
+		},
+		"paymentInfo": {
+			"title": "Payment information",
+			"method": "Payment method",
+			"selectMethod": "Select payment method"
+		},
+		"previousBtn": "Previous Step",
+		"paymentBtn": "Paying"
+	},
+	"CompleteHst": {
+		"compSvcApply": "Your service application has been completed.",
+		"mySilkroadBtn": "My SilkRoad Shortcuts"
+	},
+	"smartroPay": {
+		"popup_block_msg": "Browser popup is set to Block.Please set the \n pop-up unblocker.",
+		"complete_msg": "Your payment has been completed.",
+		"failure_msg": "Payment failed."
+	},
+	"common": {
+		"btnY": "Confirm",
+		"btnN": "Cancel",
+		"btnAlert": "Alert",
+		"btnConfirm": "Confirm",
+		"btnClose": "Close",
+		"btnChange": "Change",
+		"btn_detail": "Show detail",
+		"goHome": "Changes are not saved. Still want to go home?",
+		"chgUsrInfo": "Are you sure you want to save your changes?",
+		"alertSave": "Saved",
+		"alertCancel": "Cancelled",
+		"years": "-",
+		"months": "-",
+		"days": "",
+		"hit": "Hit",
+		"hits": "Hits"
+	},
+	"user": {
+		"logoutAlert": "You are logged out.",
+		"authNoAlert": "You do not have permission. Please log in.",
+		"tokenExprire": "Permission has expired. Please log in.",
+		"loginPlease": "This service is available after logging in.",
+		"join": {
+			"title": "Sign Up",
+			"requiredFields": "Required fields",
+			"signUp": "Sign up",
+			"success": "A membership registration confirmation email has been sent. Please use the service after authentication.",
+			"fail": "ID (email) that already exists.",
+			"terms": {
+				"title": "Terms of Use (required)",
+				"spanAgree": "Agree to the terms of subscription",
+				"chkAgreeAll": "I fully agree.",
+				"spanAgreeAll": "I agree to all terms of use, collection and use of personal information(required)",
+				"chkAgreeRequired1": "Accept the terms of use (required)",
+				"chkAgreeRequired2": "Consent to collection and use of personal information (required)",
+				"chkAgreeOptions1": "I agree to receive advertising information (optional)",
+				"alertAgreeRequired1": "Please agree to the terms and conditions.",
+				"alertAgreeRequired2": "Please agree to the collection and use of personal information.",
+				"modalConfirm": "Confirm",
+				"modalCancel": "Cancel",
+				"viewTerms": "View Terms",
+				"termsTitle": "This is title",
+				"termsCont": "This is content",
+				"joinBtn": "Go sign up",
+				"joinCancel": "Cancel",
+				"alertTermsTitle": "Terms and Conditions Notice",
+				"alertTermsMsg": "Please check the required items."
+			},
+			"input": {
+				"alertValidTitle": "Member registration input error",
+				"alertValidEmail1": "Email is required.",
+				"alertValidEmail2": "Please enter your email in the correct format.",
+				"alertValidDupCehck": "Please check for duplicate emails.",
+				"alertValidPasswd1": "Please enter a password.",
+				"alertValidPasswd2": "Please enter the password according to the format.",
+				"alertValidPasswd3": "Please enter the password checkbox.",
+				"alertValidPasswd4": "The verification passwords do not match.",
+				"alertValidName": "Input your name, please.",
+				"alertValidPhone1": "Please enter your contact information.",
+				"alertValidPhone2": "Please enter your contact information in the correct format.",
+				"alertJoinSucceed": "Your registration is complete!",
+				"alertJoinFail": "Please check the terms and conditions.",
+				"alertDupTitle1": "Duplicate check input error",
+				"alertDupMsg1": "Please enter your email in the correct format.",
+				"alertDupMsg2": "Available email.",
+				"alertDupMsg3": "Duplicate emails. Please re-enter.",
+				"dupCheck": "Duplicate check",
+				"spanEmail": "Email",
+				"spanPasswd": "Password",
+				"spanPasswd2": "Confirm Password",
+				"spanName": "Name",
+				"spanPhone": "Phone number",
+				"spanCountry": "Country",
+				"optionCountryKR": "Korea",
+				"optionCountryUS": "United States",
+				"optionCountryJP": "Japan",
+				"optionCountryCH": "China",
+				"holderEmail": "Please enter your e-mail.",
+				"holderPasswd": "Use 8 to 15 alphanumeric characters/special characters.",
+				"holderPasswd2": "Please enter a password.",
+				"holderName": "Input your name, please.",
+				"holderPhone": "Enter without hyphens.",
+				"btnCancel": "Cancel",
+				"btnJoin": "Join"
+			},
+			"information": {
+				"title": "User information | Silkroad",
+				"title_desc": "User information magement",
+				"email": "Id(e-mail)",
+				"email_receive_yn": "Receive email advertisement",
+				"name": "Name",
+				"mobile": "Mobile number",
+				"country": "Country",
+				"cboCountry": "Select country",
+				"optCountry": {
+					"KR": "Korea",
+					"US": "USA",
+					"JP": "Japan",
+					"CN": "China"
+				},
+				"language": "Language",
+				"optLanguage": {
+					"KR": "Korean",
+					"EN": "English",
+					"JP": "Japanese",
+					"CN": "Chinese"
+				},
+				"placeholder": {
+					"name": "Type your name",
+					"phone": "Mobile number without -",
+					"country": "Select your country",
+					"language": "Select language"
+				},
+				"validation": {
+					"name": "Type your name",
+					"phone": "Type your mobile number",
+					"phone_no_letter": "Please use only numbers without special symbols",
+					"country": "Select your country",
+					"language": "Select language",
+					"valChk_name_toolong_title": "Name is too long",
+					"name_toolong_msg": "The name must be less than 255 characters.",
+					"phone_toolong_msg": "The phone number must be less than 32 characters.",
+					"not_changed": "There is no information to change."
+				},
+				"change_pw": "Change password",
+				"emailPopup": "Notification of receiving advertisement mail and SMS \nWhen you opt out of receiving advertisements, we do not send advertisement emails and SMS to the corresponding email or mobile phone. However, domain and hosting service extension notices and urgent notices are not classified as advertisements, and information is sent when necessary.",
+				"update_success": "Success",
+				"update_failure": "Please check again"
+			},
+			"advertise": {
+				"title": "Consent to receive advertising information (optional)",
+				"caption": "* Members may refuse to consent to the collection and use of personal information for optional items, and even if they refuse, there are no restrictions on membership registration and service use.",
+				"th1": "Collected items",
+				"th2": "Purpose of collection and use",
+				"th3": "period of use",
+				"td1": "All items consented to the collection/use of personal information in the mandatory agreement and information generated by combining them",
+				"td2": "Development and specialization of new services, provision of services and advertisements according to demographic characteristics, identification of access frequency, and delivery of advertisement information such as statistics and events on member service use",
+				"td3": "During the membership retention period, you agree to receive advertising information"
+			},
+			"privacy": {
+				"title": "I agree to the collection and use of personal information (required)",
+				"collection": "collection",
+				"purpose": "purpose of collection and use",
+				"periodOfUse": "period of retention and use",
+				"email": "email address",
+				"name": "name",
+				"purposeDesc": "Identification of members and provision of services upon initial membership registration",
+				"periodOfUseDesc": "Reason for retention: To prevent fraudulent use, and to resolve disputes related to service period and fee retention period: 1 year",
+				"phone": "mobile phone number",
+				"wiredPhone": "wired phone number",
+				"purposeDesc1": "When applying for service",
+				"collectionDesc": "Service-related account information (if necessary, such as account linkage)",
+				"collectionDesc1": "Account information (name of bank, account number, name of trader)",
+				"serviceUsage": "service usage record",
+				"accessLog": "access log",
+				"cookies": "cookies",
+				"AccessIP": "Access IP information",
+				"PaymentRecord": "Payment Record",
+				"stopRecord": "Stop record",
+				"BadUseRecord": "BadUseRecord",
+				"purposeDesc2": "On Refund"
+			}
+		}
+	},
+	"error": {
+		"connection": "Connection is not smooth.",
+		"occured": "An error occurred.",
+		"nodata": "No data",
+		"nodata2": "No data",
+		"nodata3": "No data",
+		"home": "Home"
+	},
+	"file": {
+		"msg": {
+			"success": "Processed successfully.",
+			"format": "The image format is incorrect.",
+			"sizeUnder200": "The minimum image size is 200px x 200px.",
+			"sizeExcess800": "The maximum image size is 800px x 800px.",
+			"volumeExcess3": "Image size cannot exceed 3 MB.",
+			"extensionImage": "An error occurred during upload."
+		}
+	},
+	"notice": {
+		"header": {
+			"title": "Notice",
+			"desc": "This is a notice."
+		},
+		"search": {
+			"title": "Notice",
+			"searchInput": "Please enter your search term."
+		},
+		"table": {
+			"total": "Total",
+			"count": "EA",
+			"noResult": "No results were found for your search."
+		},
+		"detail": {
+			"list": "Go list"
+		}
+	},
+	"faq": {
+		"header": {
+			"title": "FAQ",
+			"desc": "This is a frequently asked question."
+		},
+		"search": {
+			"title": "FAQ",
+			"searchInput": "Please enter your search term.",
+			"best": "Best",
+			"useage": "How to use",
+			"problem": "Problem solving",
+			"payment1": "Payment resolution",
+			"payment2": "Payment error",
+			"other": "Other",
+			"login": "Login",
+			"join": "Sign Up",
+			"service": "Service",
+			"all": "All"
+		},
+		"table": {
+			"noResult": "No results were found for your search."
+		}
+	},
+	"inquiry": {
+		"header": {
+			"title": "1:1 inquiry",
+			"desc": "This is a 1:1 inquiry.",
+			"insertTitle": "1:1 inquiry registration",
+			"insertDesc": "1:1 inquiry registration.",
+			"updateTitle": "1:1 inquiry correction",
+			"updateDesc": "1:1 inquiry correction."
+		},
+		"button": {
+			"inq": "Contact us",
+			"update": "Update",
+			"delete": "Delete",
+			"cancel": "Cancel",
+			"insert": "Regist"
+		},
+		"list": {
+			"deleteComplete": "Deletion is complete.",
+			"no": "No.",
+			"category": "category",
+			"title": "Title",
+			"writer": "Writer",
+			"regDt": "Date Created",
+			"noContent": "There is no 1:1 inquiry history.",
+			"reply": "Answer",
+			"isDelete": "Are you sure you want to delete your inquiry?",
+			"cancelDelete": "Canceled deletion."
+		},
+		"write": {
+			"insertComplete": "Registration is complete.",
+			"updateComplete": "Correction is complete.",
+			"validCategory": "Please select the inquiry type.",
+			"validSubject": "Please write a title.",
+			"validContent": "Please write the content.",
+			"headerUpdate": "1:1 inquiry modification",
+			"headerInsert": "1:1 Inquiry Registration",
+			"inquiryTyp": "Inquiry type",
+			"selectTyp": "Type selection",
+			"subject": "Title",
+			"content": "Contents",
+			"guideTitle": "1:1 Inquiry Please use this way.",
+			"guideDesc1": "If you cannot find your question in 'Frequently Asked Questions', please use 1:1 inquiry.",
+			"guideDesc2": "Only you can check the contents registered in 1:1 inquiry.",
+			"guideDesc3": "Please understand that responses may be delayed during temporary inspection hours and holidays."
+		}
+	},
+	"mySilkroad": {
+		"header": {
+			"noService1": "There is no service request history.",
+			"noService2": "Go to the hosting application page.",
+			"usedId": "ID in use",
+			"applyIdList": "List of applied IDs",
+			"region": "Region",
+			"addr": "Address",
+			"periodUndefined": "Period undecided"
+		},
+		"basicManagement": {
+			"title": "Usage Monitoring | Silkroad",
+			"title_desc": "Usage Monitoring",
+			"count": "EA",
+			"add_vol": "Add volume",
+			"traffic_subtitle": "Web traffic Usage per day",
+			"traffic_contract": "Contract traffic",
+			"traffic_accumulation": "Cumulative traffic",
+			"traffic_available": "Remain traffic",
+			"traffic_rst_cnt": "Traffic reset count",
+			"reset_time": "time",
+			"traffic_modal_phone": "Mobile number",
+			"traffic_modal_receive": "Receive",
+			"quota_subtitle": "Quota usage",
+			"quota_total": "Total",
+			"quota_remain": "Remain",
+			"quota_current": "Used",
+			"quota_db": "Database usage",
+			"quota_unlimited": "Unlimited within server capacity",
+			"quota_usage": "Usage",
+			"quota_statistics": "Detailed statistics",
+			"db_detail_stat": "Database detailed statistics",
+			"db_usage_stat": "Usage Statistics",
+			"db_total_table_cnt": "Total number of tables",
+			"db_total_record_cnt": "Total number of records",
+			"db_total_quota": "Total quota",
+			"db_current_usage": "Current usage",
+			"db_current_usage_desc": "(There may be a difference with the DB capacity being used on the actual server.)",
+			"db_table_detail": "Details by table",
+			"db_table_name": "Table name",
+			"db_table_form": "Table form",
+			"db_record_cnt": "Number of records",
+			"db_usage_cnt": "Usage",
+			"db_unlimited": "Unlimited within server capacity",
+			"alarm": "Alarm settings",
+			"hard_subtitle": "Hard/Traffic specification",
+			"hard_alarm": "Hard Notification Settings",
+			"hard_hardvol": "Hard capacity",
+			"hard_server": "Server environment",
+			"hard_ip": "Server ip",
+			"hard_web": "Web capacity",
+			"hard_volume": "volume",
+			"hard_traffic": "Traffic capacity",
+			"reset": "Reset",
+			"realtime_subtitle": "Real time traffic",
+			"realtime_detail": "Detail",
+			"realtime_daily_volume": "Daily transfer volume",
+			"realtime_total_cnt1": "Total ",
+			"realtime_total_cnt2": "",
+			"realtime_select_by": "Inquiry method",
+			"realtime_show_monthly": "View by month",
+			"realtime_select_date": "Select period",
+			"realtime_traffic_usage": "Traffic usage",
+			"realtime_traffic_contract": "Contract traffic",
+			"realtime_daily_traffic": "Daily traffic",
+			"realtime_date": "Date",
+			"realtime_usage": "Usage",
+			"realtime_average": "Average",
+			"realtime_sum": "Total",
+			"alarm_modal": {
+				"title": "Notification settings",
+				"desc1": "Notifications are received after checking the capacity every hour.",
+				"desc2": "The mobile phone number to be received is automatically changed when the administrator number is updated in the \"Inbox\" state.",
+				"phone_number": "Phone number",
+				"received": "Receive or not",
+				"notify_yes": "Receive",
+				"notify_no": "Don't receive",
+				"used": "(Usage rate)",
+				"cancel": "Cancel",
+				"confirm": "Confirm",
+				"trafficAlarmComplete": "Web traffic usage alarm setting is complete.",
+				"quotaAlarmComplete": "Quota usage alarm setting is completed."
+			}
+		},
+		"backup": {
+			"title": "Get/Upload Backup",
+			"terms": "Recall that the basic responsibility for backup rests with the customer, and please be mindful of managing your information.",
+			"dbBackup": "Get DB backup",
+			"thDb": "DB",
+			"thBackupPath": "Backup file path",
+			"btnBackup": "Get a backup",
+			"backupInfo1": "In the FTP directory, it is created in the root, so you can move to the top after connecting to FTP.",
+			"backupInfo2": "After clicking Start Backup, 5 to 10 minutes later, connect via FTP and download the file.",
+			"recover": "DB recovery (removing the backup file)",
+			"btnRecover": "To recover",
+			"recoverInfo1": "Automatic recovery using DB backup file is available only for MySQL.",
+			"recoverInfo2": "After uploading the DB backup file using FTP, enter the exact location of the file and click the Restore button.",
+			"recoverInfo3": "If you uploaded it to the root (/), just enter the file name in the relevant space.",
+			"recoverInfo4": "If you upload directly after connecting via FTP, enter www/file name as the directory is www.",
+			"dataBackup": "Get Data backup",
+			"dataInfo1": "In the FTP directory, it is created in the root, so you can move to the top after connecting to FTP.",
+			"dataInfo2": "After clicking Start Backup, 5 to 10 minutes later, connect via FTP and download the file.",
+			"dataInfo3": "If there is an account that requested a restore/backup before the customer, it will proceed in order starting with the account that was requested first.",
+			"dataInfo4": "Backed up files are automatically deleted after one day, so please keep important data on FTP client's PC.",
+			"dataInfo5": "(Example: When backing up DATA at 10:30 - Deleted at 10:00 the next day)",
+			"noneAccountId": "Account ID does not exist.",
+			"pleaseInputPath": "Please enter the backup file path.",
+			"pleaseExtChk": "Please check the extension.",
+			"pleaseFileNm": "Please check the file name.",
+			"dbBackupComplete": "DB has been backed up.",
+			"dbBackupFail": "DB backup failed.",
+			"dbRecoverComplete": "DB has been restored.",
+			"dbRecoverFail": "DB recovery failed.",
+			"dataBackupComplete": "DATA has been backed up.",
+			"dataBackupFail": "DATA backup failed.",
+			"serviceBlock": "The service is blocked.",
+			"serviceExpire": "The service has expired."
+		},
+		"init": {
+			"title": "Account Reset",
+			"mainInfo1": "Account initialization is a function that restores the www directory and MySQL DB in the account to the first newly installed state.",
+			"mainInfo2": "Recovery is impossible after initialization, so be sure to back up important data before initializing it.",
+			"subTitle": "Choose to reset your account",
+			"dataInit": "DATA initialization",
+			"dataInputTitle": "Please enter the FTP password for data initialization authentication.",
+			"inputHolder": "Please enter a password.",
+			"termsTitle": "Be sure to check before resetting!",
+			"dataTermsContent1": "DATA initialization will initialize the www directory in your account to the first newly installed state.",
+			"dataTermsContent2": "Data recovery is not possible after initialization, so please make a separate backup of important files before proceeding.",
+			"termsConfirm": "I have checked the above.",
+			"btnInit": "Reset application",
+			"dbInit": "DB initialization",
+			"dbInputTitle": "Enter the DB password for DB initialization authentication.",
+			"dbTermsContent1": "DB initialization will initialize the MySQL DB in your account to the first newly installed state.",
+			"dbTermsContent2": "DB recovery is not possible after initialization, so please perform a separate backup of important DBs.",
+			"allInit": "Initialize both DATA and DB",
+			"allInputTitle": "Please enter FTP and DB password for DATA and DB initialization authentication.",
+			"spanFtpPwd": "FTP password",
+			"spanDbPwd": "DB password",
+			"allTermsContent1": "The account's www directory and MySQL DB are initialized to the newly installed state.",
+			"allTermsContent2": "DATA and DB recovery is not possible after initialization, so make a separate backup of important data and DB before proceeding.",
+			"dataInitComplete": "DATA has been initialized.",
+			"dataInitFail": "Please check your FTP password.",
+			"dbInitComplete": "DB has been initialized.",
+			"dbInitFail": "Please check the DB password.",
+			"allInitComplete": "DATA and DB have been initialized.",
+			"allInitFail": "Please check the DATA and DB password.",
+			"pleaseFtpInput": "Please enter your FTP password.",
+			"pleaseDbInput": "Please enter your DB password.",
+			"pleaseDataConfirm": "Please check the contents of DATA initialization.",
+			"pleaseDbConfirm": "Please check the DB initialization details.",
+			"pleaseAllConfirm": "Please check the contents of DATA and DB initialization."
+		},
+		"serviceAccess": {
+			"meta": {
+				"title": "Service access information",
+				"desc": "Service access information."
+			},
+			"container": {
+				"title": "Service access information."
+			},
+			"sftpServiceAccess": "View SFTP connection information",
+			"sftpHostName": "SFTP address",
+			"sftpId": "SFTP ID",
+			"sftpPort": "SFTP port",
+			"databaseServiceAccess": "View Database access information",
+			"databaseAccess": "Database address",
+			"databaseID": "Database ID",
+			"databasePort": "Database port"
+		},
+		"domain": {
+			"meta": {
+				"title": "Manage Domain Connections",
+				"desc": "Manage Domain Connections"
+			},
+			"container": {
+				"title": "Manage Domain Connections"
+			},
+			"emptyDomainCount": "Domain count data not found.",
+			"emptyDomainList": "Domain list data not found.",
+			"currentState": "Domain Account Status",
+			"limitCnt": "Number of domain limits",
+			"usageCnt": "Connection domain in use",
+			"addSetDomain": "Additional set domains",
+			"nameServerInfo": "Name Server Information",
+			"nameServerBtn": "Name Server Information",
+			"deleteConnectionBtn": "Delete Connection",
+			"connectDomain": "Connecting to a Domain",
+			"domainInput": "Enter the domain you want to use.",
+			"connect": "Connecting",
+			"deleteConfirm": "Are you sure you want to delete it?",
+			"deleted": "Deleted.",
+			"unableToDelete": "You can no longer delete it.",
+			"alreadyUsed": "The domain is already in use.",
+			"connected": "You are connected.",
+			"exceed": "Domain limit exceeded.",
+			"empty": "Please enter your domain.",
+			"invalid": "Invalid domain format.",
+			"setDomain": "The domain is being set up. Please try in a little while."
+		},
+		"paymentDetail": {
+			"meta": {
+				"title": "Payment details",
+				"desc": "Payment details"
+			},
+			"container": {
+				"title": "Payment details"
+			},
+			"tab": {
+				"all": "All",
+				"service": "Service",
+				"extend": "Extend",
+				"option": "Option",
+				"resetTraffic": "Reset Traffic",
+				"domain": "Domain"
+			},
+			"total": {
+				"payNum": "Number",
+				"detail": "Detail",
+				"amount": "Amount",
+				"payMethod": "Payment Method",
+				"payDate": "Date",
+				"payState": "State",
+				"canceled": "Cancelled",
+				"noCancel": "CANNOT CANCEL",
+				"cancelBtn": "Cancel Payment",
+				"empty": "There is no billing history."
+			},
+			"service": {
+				"payNum": "Number",
+				"detail": "Detail",
+				"amount": "Amount",
+				"payMethod": "Payment Method",
+				"payDate": "Date",
+				"svcPeriod": "Service Period",
+				"empty": "There is no billing history."
+			},
+			"emptyDetail": "There is no payment history data.",
+			"guidance": "Card Sales Statement Guidance",
+			"guidanceDesc1": "You can print the credit card sales slip for the details of payment by credit card sales slip.",
+			"guidanceDesc2": "Credit card sales slip can be inquired up to the payment details in the last 18 months."
+		},
+		"paymentCancel": {
+			"meta": {
+				"title": "Cancel Payment",
+				"desc": "Cancel Payment"
+			},
+			"container": {
+				"title": "Cancel Payment"
+			},
+			"svcInfo": "Service Information",
+			"svcName": "Service Name",
+			"monthlyPrice": "Monthly Usage Fee",
+			"payMethod": "Payment Method",
+			"payDate": "Date",
+			"amount": "Amount",
+			"cancelMsg": "Reason for Cancellation",
+			"cancelInput": "Please enter a reason.",
+			"cancelBtn": "To cancel",
+			"cancelTimeOver": "Cancellation is overdue.",
+			"won": " KRW"
+		},
+		"paymentCancelComp": {
+			"meta": {
+				"title": "Payment Cancellation Completed",
+				"desc": "Payment Cancellation Completed"
+			},
+			"container": {
+				"title": "Payment Cancellation Completed"
+			},
+			"desc": "Payment cancellation has been completed.",
+			"svcInfo": "Service Information",
+			"cancelDate": "Cancellation Date",
+			"ResultMsg": "Cancellation Result Message",
+			"cancelMsg": "Reason for Cancellation",
+			"checkBtn": "Check"
+		},
+		"payment": {
+			"meta": {
+				"title": "My Silk Road payment page",
+				"desc": "This is the My Silk Road payment page."
+			},
+			"container": {
+				"serviceUsage": "Service usage status"
+			},
+			"serviceUsageInfo": {
+				"days": "days",
+				"months": "months",
+				"years": "years",
+				"remain": "left",
+				"id": "ID",
+				"serviceNm": "Service Name",
+				"period": "Term",
+				"trafficCapacity": "Traffic capacity",
+				"quotaCapacity": "Quota capacity",
+				"trafficAccumulate": "Cumulative traffic"
+			},
+			"mySelectOption": {
+				"title1": "Select the length of time/option to extend",
+				"title2": "Select option to add",
+				"title3": "Traffic initialization",
+				"extendPeriod": "Extended period",
+				"select": "select",
+				"until": "until",
+				"optionNm": "Option name",
+				"spec": "Specification",
+				"monthlyUsage": "Monthly fee",
+				"payAmount": "Amount of payment",
+				"traffic": "traffic",
+				"day": "day",
+				"domainCnt": "domain connection",
+				"won": "KRW",
+				"discountRate": "Discount rate",
+				"totalAmount": "Total payment amount",
+				"addOptionSelect": "Choose more options",
+				"addTraffic": "Add traffic capacity",
+				"addQuota": "Add Quota Capacity",
+				"addAmount": "Additional amount",
+				"usagePeriod": "Period of use"
+			},
+			"myPayMethod": {
+				"popBlocker": "Browser pop-ups are set to block.",
+				"popBlockCancel": "Please turn off pop-up blocker.",
+				"payCancel": "Your payment has been canceled.",
+				"payCompleteExtend": "Payment for service extension has been completed.",
+				"payCompleteTraffic": "The additional traffic payment has been completed.",
+				"payCompleteQuota": "Quota additional payment has been completed.",
+				"payCompleteTrafficReset": "Traffic initialization payment has been completed.",
+				"extendPeriodSelection": "Please select an extension period.",
+				"addQuotaOptionSelection": "Please select the option to add quota capacity.",
+				"addTrafficOptionSelection": "Please select the option to add traffic capacity.",
+				"paymentMethodSelection": "Please select a payment method.",
+				"payMethodSelect": "Choose a payment method",
+				"payMethod": "Payment method",
+				"payDesc1": "When paying more than 300,000 KRW, the use of an official certificate is compulsory.",
+				"payDesc2": "In Windows OS environment, it is available only on PC with Windows XP Service Pack 3 or higher.",
+				"payDesc3": "According to the amended value-added tax law, credit card sales slips replace tax invoices, and sales slips can be printed on the payment completion page.",
+				"payBtn": "Go to pay",
+				"payErr": "Payment was canceled due to an error."
+			}
+		},
+		"usageStatus": {
+			"meta": {
+				"title": "Service usage status",
+				"desc": "This is the service usage status page."
+			},
+			"basicServiceUsageStatus": {
+				"title": "Service usage status",
+				"status": "State",
+				"management": "Management",
+				"extendApply": "Go to extend",
+				"standby": "Waiting",
+				"used": "in use",
+				"block": "block",
+				"expiration": "expiration",
+				"noServiceUse": "There is no service in use.",
+				"yetBuild": "The service is being built."
+			}
+		},
+		"databaseStat": {
+			"meta": {
+				"title": "Database statistics",
+				"desc": "This is the database statistics page."
+			},
+			"usageStat": {
+				"title": "Usage Statistics",
+				"tableRows": "Total number of tables",
+				"recordRows": "Total number of records",
+				"currentUsage": "Current usage",
+				"desc": "There may be a difference with the DB capacity being used on the actual server.",
+				"ea": "EA"
+			},
+			"detailEachTable": {
+				"title": "Details by table",
+				"tableNm": "Table name",
+				"tableType": "Table form",
+				"recordRows": "Number of records",
+				"used": "Usage",
+				"ea": "EA",
+				"noData": "No database in use."
+			}
+		},
+		"trafficStat": {
+			"meta": {
+				"title": "Traffic statistics",
+				"title2": "Real-time traffic statistics",
+				"desc": "This is the traffic statistics page."
+			},
+			"usageInformation": {
+				"title": "Usage information",
+				"inquiryMethod": "Inquiry method",
+				"month": "View by month",
+				"SelectPeriod": "Select period",
+				"trafficUsage": "Traffic Usage",
+				"contractTraffic": "Contract traffic",
+				"excessTraffic": "Excess traffic"
+			},
+			"dailyTraffic": {
+				"title": "Daily traffic",
+				"date": "Date",
+				"amountUsed": "Usage",
+				"average": "Average",
+				"total": "Total"
+			}
+		},
+		"trafficStatDetail": {
+			"meta": {
+				"title": "Traffic Statistics Details",
+				"title2": "Detailed view of real-time traffic statistics",
+				"desc": "This is the traffic statistics detail page."
+			},
+			"dailyTransfer": {
+				"title": "Daily transfer statistics",
+				"desc": "There are no domains to choose from.",
+				"domain": "Domain",
+				"lastUpdated": "Last updated date",
+				"date": "Date",
+				"totalHitsRows": "Total Hits",
+				"totalHitsDesc": "Total of files read by all site visitors (HTML pages, images, audio files, cgi scripts, etc.)",
+				"mainVisitorsRows": "Main Visitors",
+				"mainVisitorsDesc1": "Represents the number of visitors.",
+				"mainVisitorsDesc2": "Even if a single visitor tries to access multiple times within 30 minutes, it will be counted as 1 on record.",
+				"personnel": "People",
+				"accessIpRows": "Number of access IPs",
+				"accessIpRowsDesc1": "The sum of the IP numbers of the accessed users.",
+				"accessIpRowsDesc2": "Re-visits with the same IP on the same date are not included in the statistics.",
+				"ea": "EA",
+				"totalTransmission": "Total Transmission",
+				"totalTransmissionDesc": "Number of traffic used.",
+				"noteDesc": "Only domains that were connected on that date and had a traffic volume will be exposed."
+			},
+			"transferDetails": {
+				"title": "Detailed traffic statistics",
+				"Time": "Time zone",
+				"Page/file": "Page/File",
+				"LinkedPage": "Linked page",
+				"AccessIP": "Access IP",
+				"CountryAccess": "Country of access",
+				"UserAgent": "User Agent"
+			},
+			"trafficTime": {
+				"hour": "Hour",
+				"transmissionVolume": "Transmission Volume(Bytes)",
+				"transmissionRate": "Transmission Rate(Bytes)",
+				"views": "Views(Hits)",
+				"HitRate": "HitRate(Hits)",
+				"noData": "No data.",
+				"desc1": "Transmission volume (Bytes): Displays the amount of traffic generated by the homepage by time period.",
+				"desc2": "Transfer rate (Bytes): Percentage of the amount of traffic per hour (Bytes).",
+				"desc3": "views (Hits): Shows the total number of files (HTML pages, images, audio files, cgi scripts, etc.) read by site visitors over time.",
+				"desc4": "HitRate (Hits): Percentage of the total number of hits per hour (Hits), ie files viewed by site visitors."
+			},
+			"trafficPageFile": {
+				"ranking": "Ranking",
+				"PageFileURL": "Access page (file) URL",
+				"desc1": "Transmission (Bytes): Displays the amount of traffic generated by the homepage by page/file.",
+				"desc2": "Transfer rate (Bytes): Percentage of the amount of transfer (Bytes) per page/file, that is, the amount of traffic generated.",
+				"desc3": "Views (Hits): Displays the total number of files (HTML pages, images, audio files, cgi scripts, etc.) read by site visitors by page/file.",
+				"desc4": "HitRate (Hits): Percentage of the total number of hits (Hits) per page/file, i.e. files viewed by site visitors."
+			},
+			"trafficLinkPage": {
+				"desc1": "Linked page is the statistics of calling the file and URL through the link of the URL linked from the web page.",
+				"desc2": "Bytes: Displays the amount of traffic generated by the homepage for each linked page.",
+				"desc3": "Transfer rate (Bytes): Percentage of the amount of traffic generated (Bytes) per linked page.",
+				"desc4": "Views (Hits): Shows the total number of files (HTML pages, images, audio files, cgi scripts, etc.) read by site visitors by linked page.",
+				"desc5": "HitRate (Hits): Percentage of the total number of hits (Hits) per linked page, i.e. files read by site visitors.",
+				"desc6": ": Access history by directly entering the URL into the web browser address bar."
+			},
+			"trafficIP": {
+				"IP": "IP",
+				"country": "Country",
+				"UserAgent": "User Agent",
+				"mainVisitors": "Number of main visitors (VIsits)",
+				"MainVisitorRate": "MainVisitorRate",
+				"personnel": "People",
+				"desc1": "Transmission amount (Bytes): Displays the amount of traffic generated by the homepage by access IP.",
+				"desc2": "Views (Hits): Displays the total number of files (HTML pages, images, audio files, cgi scripts, etc.) read by site visitors by access IP.",
+				"desc3": "Number of main visitors (VIsits): Shows the number of visits per access IP. Even if a single visitor tries to access multiple times, it will be counted as one on record."
+			},
+			"trafficCountry": {
+				"desc1": "Transmission (Bytes): Displays the amount of traffic generated by the website for each country accessed.",
+				"desc2": "Views (Hits): Displays the total number of files (HTML pages, images, audio files, cgi scripts, etc.) read by site visitors by country of access."
+			},
+			"trafficUserAgent": {
+				"desc1": "User Agent: This is header information that stipulates that when a web browser accesses the site, information such as the type of web browser accessed, OS, etc. is transmitted.",
+				"desc2": "Transmission (Bytes): Displays the amount of traffic generated on the homepage by user agent.",
+				"desc3": "Views (Hits): Displays the total number of files (HTML pages, images, audio files, cgi scripts, etc.) read by site visitors by User Agent."
+			},
+			"trafficCommon": {
+				"time": "Time",
+				"hour": "Time",
+				"traffic": "Traffic",
+				"trafficRate": "Traffic rate",
+				"hitRate": "Hit rate",
+				"hits": "Hits",
+				"page": "page/file",
+				"referer": "URL",
+				"mainVisits": "Main visits",
+				"country": "Country",
+				"userAgent": "User Agent"
+			}
+		}
+	},
+	"main": {
+		"slider": {
+			"title1-1": "Get easy, affordable web hosting services ",
+			"title1-2": "from anywhere in the world.",
+			"title2-1": "Free 3 months for everyone when they make their",
+			"title2-2": "first purchase after signing up for membership.",
+			"desc1-1": "Leverage public cloud (AWS, GCP, Azure, etc.) infrastructure to minimize ",
+			"desc1-2": "operational overhead and deliver services securely from anywhere in the world.",
+			"desc2-1": "Silk Road the other global web hosting services.",
+			"desc2-2": "Experience it for free now."
+		},
+		"explanation": {
+			"title1": "Why Web hosting should be left to a more ",
+			"title2": "professional and sophisticated company?",
+			"firstItemTitle": "Rapid customer support from professional teams",
+			"firstItemDesc1": "If you have been struggling with difficult and complicated ",
+			"firstItemDesc2": "procedures to contact us or have not received immediate feedback, ",
+			"firstItemDesc3": "our professional team will help you operate reliably with fast and accurate feedback.",
+			"secondItemTitle": "Free and affordable basic domain",
+			"secondItemDesc1": "We offer free domains such as 'Account name'.starlabs.com when signing up for a new membership.",
+			"secondItemDesc2": "Additional connections can then be made based on the number of domain connections ",
+			"secondItemDesc3": "by specification, and simple and affordable web hosting services can be made by ",
+			"secondItemDesc4": "leveraging a global cloud infrastructure (AWS, GCP, Azure, Tencent, etc.).",
+			"thirdItemTitle": "Usage monitoring and real-time traffic alerts",
+			"thirdItemDesc1": "You can check monthly, daily, and hourly traffic usage ",
+			"thirdItemDesc2": "at any time, and real-time monitoring and alerting settings ",
+			"thirdItemDesc3": "prevent site blocking by excess traffic."
+		},
+		"product": {
+			"empty": "There is no data hosting products.",
+			"title": "Choose the best webhosting service.",
+			"item": {
+				"desc": "Fully Hosted for Beginners",
+				"price": "￦",
+				"priceDesc": "(including VAT)",
+				"pricePerMonth": "KRW/Month",
+				"event": "Free for 3 months on first purchase",
+				"benefit1": "HDD",
+				"benefit2": "GiB",
+				"traffic1": "Traffic (days)",
+				"traffic2": "GIB",
+				"database": "DB Capacity Unlimited",
+				"domainConnect": "Domain Connection",
+				"SSL": "Free SSL",
+				"pricePerInstall1": "Installation costs",
+				"pricePerInstall2": "KRW",
+				"backupSupport": "Weekly Backup Support",
+				"btnValue": "Apply"
+			}
+		},
+		"serviceCenter": {
+			"notice": {
+				"empty": "There is no announcement data.",
+				"title": "Notice",
+				"desc": "Service information, announcements, and news.",
+				"btnViewAll": "Full View"
+			},
+			"faq": {
+				"empty": "There is no announcement data.",
+				"title": "Do you have any questions about using the service?",
+				"desc": "With a few clicks can quickly see information required.",
+				"btnViewAll": "Full View"
+			}
+		}
+	},
+	"productIntroApply": {
+		"meta": {
+			"title": "Product introduction and application",
+			"desc": "This is the product introduction and application page."
+		},
+		"ProductIntroApplyContainer": {
+			"empty": "There is no hosted product data.",
+			"title": "Product introduction and application",
+			"item": {
+				"main": {
+					"bnrDesc": "Fully Hosted for Beginners",
+					"bnrCost1": "￦",
+					"bnrCost2": "KRW/Month",
+					"bnrCostDesc": "(including VAT)"
+				},
+				"content": {
+					"desc": "Start your Internet business at a simpler and more affordable price.",
+					"event": "Free for 3 months on first purchase"
+				},
+				"btnApply": "Apply",
+				"keyword": {
+					"quota1": "HDD -",
+					"quota2": "GiB",
+					"traffic1": "Traffic (days) -",
+					"traffic2": "GiB",
+					"database": "DB Capacity Unlimited",
+					"domainCnt": "Domain Connection",
+					"SSL": "Free SSL",
+					"priceForInstall1": "installation costs",
+					"priceForInstall2": "KRW",
+					"support": "Weekly Backup Support",
+					"regions": "U.S., Singapore, and Europe hosting server locations can be selected",
+					"serverEnvironment": "Server Environment - PHP 7.4.23, MariaDB 10.2.38"
+				}
+			},
+			"note": {
+				"title": "Precautions",
+				"list1": "The fee is prepaid and discounts are applied for 6 months (5%) and 10 months (10%) in advance.",
+				"list2": "HDD and traffic capacity options can be added during service use, and can be changed to higher services (always)",
+				"list3": "SSH, FTP, and DB accounts are provided with one each.",
+				"list4": "Mail accounts are not provided by default, and you must apply for external mail service or mail option service."
+			}
+		}
+	},
+	"whatIsService": {
+		"meta": {
+			"title": "What is Web Hosting Service?",
+			"desc": "What is Web Hosting Service?"
+		},
+		"HostingIntroContainer": {
+			"introdue": {
+				"title1": "What is ",
+				"title2": "'Global Web Hosting Service'?",
+				"desc1": "Web Hosting Service is the concept of renting and ",
+				"desc2": "using only ",
+				"desc3": "some of the hosting company's servers. ",
+				"desc4": "For those who cannot build Internet-only lines and servers, ",
+				"desc5": "it is a service that rents a certain space on a server directly ",
+				"desc6": "connected to the Internet and provides the necessary ",
+				"desc7": "application software and various tools to create a website (home page) ",
+				"desc8": "for businesses or other purposes using the Internet.",
+				"desc9": "In addition, the Silk Road's global web hosting service establishes servers ",
+				"desc10": "",
+				"desc11": "for each of the overseas revisions, ",
+				"desc12": "making them available at a rapid pace anywhere in the world."
+			},
+			"compare": {
+				"title": "General Web Hosting · Silk Road Global Web Hosting Comparison",
+				"item1": {
+					"title": "General Web Hosting",
+					"desc1": "Many users can share one physical server resource and borrow only server space, ",
+					"desc2": "and the price is low because there is no need to pay attention to server management, ",
+					"desc3": "<span style='font-weight: bold; color: #4b3f8f;'>but it is slow to use in overseas regions because there are only domestic servers.</span>",
+					"desc4": ""
+				},
+				"item2": {
+					"title": "Silk Road Global Web Hosting",
+					"desc1": "Add <span style='font-weight: bold; color: #4b3f8f;'>premium services unique to Silk Road global web hosting </span>to the benefits of low cost and server management. ",
+					"desc2": "<span style='font-weight: bold; color: #4b3f8f;'>We have 23 re-region servers overseas, </span>",
+					"desc3": "so ",
+					"desc4": "<span style='font-weight: bold; color: #4b3f8f;'>you can use them anywhere in the world at a fast.</span>",
+					"desc5": "",
+					"desc6": "",
+					"desc7": ""
+				}
+			},
+			"region": {
+				"desc1": "Eastern United States (Northern Virginia), Eastern United States (Ohio), Western United States (Northern California), Western United States (Oregon), Africa (Cape Town), Asia Pacific (Hong Kong), Asia Pacific (Mumbai), Asia Pacific (Osaka), Asia Pacific (Seoul), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Tokyo), Canada (Central), Europe (Frankfurt), Europe (Ireland), Europe (London), Europe (Milano), Europe (Paris), Europe (Stockholome), Middle East (Bahrain), South America (Sao Paulo), AWS GovCloud (US-East), AWS GovCloud (Western United States) ",
+				"desc2": "*23 Regions worldwide, including domestic"
+			},
+			"strong": {
+				"title": "Advantages of Global Web Hosting Services",
+				"item1": {
+					"number": "01",
+					"title": "Fast, reduced costs anywhere in the world",
+					"desc1": "The Silk Road Global Web Hosting Service establishes ",
+					"desc2": "23 Regions-specific servers overseas, including domestic, ",
+					"desc3": "to ensure fast speed overseas. ",
+					"desc4": "Now save money on server deployment operations overseas at the same speed as in Korea."
+				},
+				"item2": {
+					"number": "02",
+					"title": "Using the homepage of a unique domain with identity",
+					"desc1": "Feel the effect of promoting the company ",
+					"desc2": "and increasing confidence ",
+					"desc3": "by opening a global website address ",
+					"desc4": "that is accessible from anywhere at home and abroad."
+				},
+				"item3": {
+					"number": "03",
+					"title": "Customer enquiry support service",
+					"desc1": "Solve any questions that may arise from using the service ",
+					"desc2": "with quick feedback from professional ",
+					"desc3": "support on the Silk Road."
+				}
+			}
+		}
+	}
+}

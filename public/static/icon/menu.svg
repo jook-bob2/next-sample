@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 18">
+   
+    <g transform="translate(-373.556 -211.534)">
+        <g  transform="translate(373.556 219.592)">
+            <path fill="current" d="M395.046 226.042h-20.98c-.282 0-.51-.422-.51-.942s.228-.942.51-.942h20.98c.282 0 .51.422.51.942s-.228.942-.51.942z" class="cls-1" transform="translate(-373.556 -224.158)"/>
+        </g>
+        <g  transform="translate(373.556 211.534)">
+            <path fill="current" d="M395.046 213.418h-20.98c-.282 0-.51-.422-.51-.942s.228-.942.51-.942h20.98c.282 0 .51.422.51.942s-.228.942-.51.942z" class="cls-1" transform="translate(-373.556 -211.534)"/>
+        </g>
+        <g  transform="translate(373.556 227.65)">
+            <path fill="current" d="M395.046 238.666h-20.98c-.282 0-.51-.422-.51-.942s.228-.942.51-.942h20.98c.282 0 .51.422.51.942s-.228.942-.51.942z" class="cls-1" transform="translate(-373.556 -236.782)"/>
+        </g>
+    </g>
+</svg>

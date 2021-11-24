@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="15" viewBox="0 0 26 15">
+    <g transform="translate(-210 -331)">
+        <rect width="26" height="15" fill="#ee8e2f" rx="3" transform="translate(210 331)"/>
+        <text fill="#fff" font-family="NotoSansCJKkr-Regular, Noto Sans CJK KR" font-size="9px" transform="translate(213 342)">
+            <tspan x="0" y="0">NEW</tspan>
+        </text>
+    </g>
+</svg>

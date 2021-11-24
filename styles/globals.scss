@@ -1,0 +1,168 @@
+@import './mixin';
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+:root {
+	--text-color: #263343;
+	--backgound-color: #fdfdfd;
+	--accent-color: #d49466;
+	--yellow-color: #ffb000;
+}
+
+body {
+	font-family: 'Noto Sans KR', sans-serif;
+}
+select {
+	appearance: none;
+	&::-ms-expand {
+		display: none;
+	}
+	background: {
+		image: url('/static/icon/select_arrow.svg') !important;
+		repeat: no-repeat !important;
+		size: 9px 5px !important;
+		position: 96% 50% !important;
+	}
+}
+
+.clear {
+	clear: both;
+}
+.wrapper {
+	min-width: 100vw;
+	min-height: 100vh;
+	display: -ms-flexbox;
+	@include prefix(display, flex, webkit);
+	@include prefix(flex-direction, column, ms webkit);
+	overflow-x: hidden;
+}
+.main {
+	@include prefix(flex, 1 0 auto, ms webkit);
+	min-height: calc(100vh - 260px);
+	padding-top: 80px;
+	@include mobile {
+		& {
+			padding-top: 70px;
+			min-height: calc(100vh - 300px);
+		}
+	}
+
+	@include tablet {
+		& {
+			padding-top: 80px;
+			min-height: calc(100vh - 290px);
+		}
+	}
+}
+
+.container {
+	margin: 0 auto;
+	height: 100%;
+	position: relative;
+	@include mobile {
+		& {
+			width: 100%;
+			padding: 0 15px;
+		}
+	}
+
+	@include tablet {
+		& {
+			width: 100%;
+			padding: 0 20px;
+		}
+	}
+
+	@include desktop {
+		& {
+			width: 1240px;
+			padding: 0 30px;
+		}
+		&.footer-container {
+			& {
+				width: 980px;
+				padding: 0;
+			}
+		}
+	}
+}
+@each $vendor in('-webkit-input-', '-moz-', '-ms-input-', '') {
+	input[type='number'],
+	input[type='password'],
+	input[type='text'] {
+		&::#{$vendor}placeholder {
+			color: $warm-grey;
+		}
+	}
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+	-moz-appearance: textfield;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.p-n {
+	@include desktop {
+		display: none !important;
+	}
+}
+.p-y {
+	display: none;
+	@include desktop {
+		display: block;
+	}
+}
+.t-n {
+	@include tablet {
+		display: none !important;
+	}
+}
+.t-y {
+	display: none;
+	@include tablet {
+		display: block;
+	}
+}
+.m-n {
+	@include mobile {
+		display: none !important;
+	}
+}
+.m-y {
+	display: none;
+	@include mobile {
+		display: block;
+	}
+}
+
+.loading {
+	opacity: 0.5;
+	background-color: var(--backgound-color);
+	filter: brightness(80%);
+	pointer-events: none;
+}
+
+.embla {
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+.embla__container {
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+.embla__slide {
+	font-size: 7rem;
+	position: relative;
+	flex: 0 0 100%;
+}

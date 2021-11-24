@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="21" height="15" viewBox="0 0 21 15">
+    <g transform="translate(-96 -451)">
+        <rect width="21" height="15" fill="#2fee6f" rx="3" transform="translate(96 451)"/>
+        <text fill="#fff" font-family="NotoSansCJKkr-Regular, Noto Sans CJK KR" font-size="9px" transform="translate(99 462)">
+            <tspan x="0" y="0">HIT</tspan>
+        </text>
+    </g>
+</svg>

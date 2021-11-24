@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.621 20.621">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px}
+        </style>
+    </defs>
+    <g id="Icon_feather-search" transform="translate(-3 -3)">
+        <path id="패스_63" d="M19.611 12.056A7.556 7.556 0 1 1 12.056 4.5a7.556 7.556 0 0 1 7.555 7.556z" class="cls-1"/>
+        <path id="패스_64" d="M29.083 29.083l-4.108-4.108" class="cls-1" transform="translate(-7.583 -7.583)"/>
+    </g>
+</svg>

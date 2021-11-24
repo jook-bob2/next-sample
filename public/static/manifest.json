@@ -1,0 +1,33 @@
+{
+    "name": "Global web hosting",
+    "short_name": "Hosting",
+    "background_color": "#FFFFFF",
+    "theme_color": "#ffb000",
+    "description": "It's a global web hosting service",
+    "display": "standalone",
+    "start_url": "/",
+    "icons": [
+        {"src": "/static/favicon.ico", "type": "image/ico"},
+        {"src": "/static/icon/lang.svg", "type": "image/svg"},
+        {"src": "/static/images/logo.svg", "type": "image/svg"},
+        {"src": "/static/images/footer_logo.svg", "type": "image/svg"},
+        {"src": "/static/images/main/logo.svg", "type": "image/svg"},
+        {"src": "/static/icon/menu_close.svg", "type": "image/svg"},
+        {"src": "/static/icon/menu_login_arrow.svg", "type": "image/svg"},
+        {"src": "/static/icon/menu_minus.svg", "type": "image/svg"},
+        {"src": "/static/icon/menu_plus.svg", "type": "image/svg"},
+        {"src": "/static/icon/menu.svg", "type": "image/svg"},
+        {"src": "/static/icon/notice_arrow.svg", "type": "image/svg"},
+        {"src": "/static/icon/notice_plus.svg", "type": "image/svg"},
+        {"src": "/static/icon/person.svg", "type": "image/svg"},
+        {"src": "/static/icon/product_arrow.svg", "type": "image/svg"},
+        {"src": "/static/icon/product_chk.svg", "type": "image/svg"},
+        {"src": "/static/images/main/logo.svg", "type": "image/svg"},
+        {"src": "/static/images/main/explanation_1.png", "type": "image/png"},
+        {"src": "/static/images/main/explanation_2.png", "type": "image/png"},
+        {"src": "/static/images/main/explanation_3.png", "type": "image/png"},
+        {"src": "/static/images/main/mainbg_con1.png", "type": "image/png"},
+        {"src": "/static/images/main/mainbg.png", "type": "image/png"},
+        {"src": "/static/images/main/mainbg.webp", "type": "image/webp"}
+    ]
+}

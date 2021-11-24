@@ -1,0 +1,51 @@
+@import '../variables';
+@import '../mixin';
+.wrap {
+	@include flex(center, center);
+	@include prefix(flex-direction, column, ms);
+	padding-bottom: 40px;
+	.error404 {
+		margin-top: 40px;
+		fill: $blueberry;
+		margin-bottom: 5px;
+	}
+	.error_icon {
+		margin-top: 80px;
+		margin-bottom: 30px;
+		fill: $blueberry;
+	}
+	.title {
+		font-size: 30px;
+		line-height: 1.5;
+		color: $black;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.code {
+		font-size: 30px;
+		line-height: 1.5;
+		color: $black;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.desc {
+		font-size: 16px;
+		line-height: 1.88;
+		text-align: center;
+		color: $black;
+		margin-bottom: 60px;
+		&2 {
+			margin-bottom: 20px;
+		}
+	}
+	.back {
+		@include btn(250px, 60px, $blueberry, 14px, bold, $white);
+		border-radius: 5px;
+	}
+	ul {
+		font-size: 20px;
+		.error_li_mg {
+			margin-bottom: 10px;
+		}
+	}
+}

@@ -1,0 +1,720 @@
+@import '../mixin';
+@import '../variables';
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+	background-color: $white;
+	// border-bottom: 1px solid $pinkish-grey;
+	z-index: 9999;
+	&:not(:hover) {
+		transition: background 0.35s;
+	}
+
+	.gnb {
+		height: 80px;
+		display: flex;
+		border-bottom: 1px solid $pinkish-grey;
+		&.active {
+			background-color: $white;
+			border-bottom: 1px solid $pinkish-grey !important;
+		}
+		&-container {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			min-height: 80px;
+			.logo-frame {
+				@include flex(center, center);
+				.logo {
+					width: 100px;
+					cursor: pointer;
+				}
+				.logo__main {
+					display: none;
+				}
+			}
+			nav {
+				ul.gnb {
+					border: none !important;
+					li {
+						display: inline-flex;
+						height: 100%;
+						line-height: 80px;
+						position: relative;
+						a {
+							width: 100%;
+							text-align: center;
+							font-size: 16px;
+							font-weight: 500;
+							color: $black;
+							white-space: nowrap;
+						}
+						& ~ li {
+							margin-left: 60px;
+						}
+						.lnb {
+							position: absolute;
+							top: 80px;
+							left: 50%;
+							transform: translateX(-50%);
+							display: none;
+							height: 150px;
+							z-index: 100;
+							padding: 30px 0;
+							border: none;
+							&.active {
+								display: block;
+							}
+							li {
+								width: auto;
+								height: auto;
+								text-align: center;
+								white-space: nowrap;
+								line-height: 1;
+								display: block;
+								& ~ li {
+									margin-left: 0;
+								}
+								a {
+									font-size: 13px;
+									font-weight: normal;
+									padding-bottom: 25px;
+								}
+							}
+						}
+					}
+				}
+			}
+			.gnb-setting {
+				display: flex;
+				.setting {
+					&-info {
+						@include flex(center, center);
+						.login-y {
+							position: relative;
+							height: 20px;
+							cursor: pointer;
+
+							svg {
+								display: none;
+								width: 30px;
+								height: 30px;
+								fill: $black;
+							}
+							a,
+							span {
+								font-size: 14px;
+								font-weight: 500;
+								color: $black;
+								text-decoration: underline;
+							}
+							.info-list {
+								&.active__info-list {
+									display: block;
+								}
+								display: none;
+								position: absolute;
+								top: 20px;
+								left: 50%;
+								transform: translateX(-50%);
+								width: auto;
+								height: auto;
+								border: 1px solid $blueberry;
+								background-color: $white;
+								padding: 8px;
+								z-index: 999999;
+								li {
+									a {
+										font-size: 11px;
+										font-weight: normal;
+										line-height: 1.55;
+										color: $blueberry;
+										text-decoration: none;
+										white-space: nowrap;
+										text-align: center;
+									}
+									~ li {
+										padding-top: 5px;
+									}
+								}
+							}
+						}
+						.login-n {
+							@include flex(center, center);
+							svg {
+								margin-right: 3px;
+								fill: $black;
+							}
+							a {
+								color: $black;
+							}
+						}
+					}
+					&-lang {
+						width: 34px;
+						height: 18px;
+						border-radius: 5px;
+						padding: 0 5px;
+						background-color: #e4e4f5;
+						@include flex(center, center);
+						margin-left: 16px;
+						.lang {
+							&-icon {
+								margin-right: 2px;
+								fill: $black;
+								// width: 11px;
+							}
+							&-select {
+								@include flex(center, center);
+								min-width: 12px;
+								min-height: auto;
+								padding: 0;
+								border: none;
+								font-size: 10px;
+								background-color: transparent;
+							}
+						}
+					}
+					&-menu {
+						margin-left: 20px;
+						cursor: pointer;
+						fill: $black;
+					}
+				}
+			}
+		}
+	}
+	.fake-bg {
+		min-width: 100vw;
+		width: 100%;
+		height: 150px;
+		position: absolute;
+		top: 80px;
+		left: 0;
+		z-index: 99;
+		display: none;
+		background-color: transparent;
+		border-bottom: 1px solid $pinkish-grey;
+		&.active {
+			display: block;
+			background-color: $white;
+		}
+	}
+	&.header__main {
+		background-color: transparent;
+		border-bottom: 1px solid transparent;
+		&:hover {
+			// border-bottom: 1px solid $pinkish-grey;
+			background-color: $white;
+			border-bottom: 1px solid $pinkish-grey;
+			.gnb {
+				border-bottom: 1px solid $pinkish-grey;
+				&-container {
+					.logo {
+						display: block;
+					}
+					.logo__main {
+						display: none;
+					}
+					nav {
+						ul.gnb {
+							li {
+								a {
+									color: $black;
+								}
+								.lnb {
+									li {
+										a {
+											color: $black;
+										}
+									}
+								}
+							}
+						}
+					}
+					.gnb-setting {
+						.setting {
+							&-info {
+								.login-y {
+									svg {
+										fill: $black;
+									}
+									a,
+									span {
+										color: $black;
+									}
+								}
+								.login-n {
+									svg {
+										fill: $black;
+									}
+									a {
+										color: $black;
+									}
+								}
+							}
+							&-menu {
+								fill: $black;
+							}
+						}
+					}
+				}
+			}
+		}
+		.gnb {
+			border-bottom: none;
+			&-container {
+				.logo {
+					display: none;
+				}
+				.logo__main {
+					display: block;
+				}
+				nav {
+					ul.gnb {
+						li {
+							a {
+								color: $white;
+							}
+						}
+					}
+				}
+				.gnb-setting {
+					.setting {
+						&-info {
+							.login-y {
+								svg {
+									fill: $white;
+								}
+								a,
+								span {
+									color: $white;
+								}
+							}
+							.login-n {
+								svg {
+									fill: $white;
+								}
+								a {
+									color: $white;
+								}
+							}
+						}
+						&-menu {
+							fill: $white;
+						}
+						&-menu-m {
+							fill: $white;
+						}
+					}
+				}
+			}
+		}
+		&.active__main {
+			background-color: $white;
+			border-bottom: 1px solid $pinkish-grey;
+			.gnb {
+				&-container {
+					.logo {
+						display: block;
+					}
+					.logo__main {
+						display: none;
+					}
+					nav {
+						ul.gnb {
+							li {
+								a {
+									color: $black;
+								}
+								.lnb {
+									li {
+										a {
+											color: $black;
+										}
+									}
+								}
+							}
+						}
+					}
+					.gnb-setting {
+						.setting {
+							&-info {
+								.login-y {
+									svg {
+										fill: $black;
+									}
+									a,
+									span {
+										color: $black;
+									}
+								}
+								.login-n {
+									svg {
+										fill: $black;
+									}
+									a {
+										color: $black;
+									}
+								}
+							}
+							&-menu {
+								fill: $black;
+							}
+							&-menu-m {
+								fill: $black;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	&.header__my_silkroad {
+		.gnb {
+			border-bottom: none;
+		}
+		&.active__silkroad {
+			.gnb {
+				border-bottom: 1px solid $pinkish-grey;
+			}
+		}
+	}
+	.m-menu-bg {
+		display: none;
+	}
+	@include desktop {
+		&:hover {
+			background-color: $white;
+			transition: background 0;
+			// border-bottom: 1px solid $pinkish-grey;
+			.gnb {
+				border-bottom: 1px solid $pinkish-grey;
+				&-container {
+					.logo {
+						display: block;
+					}
+					.logo__main {
+						display: none;
+					}
+					nav {
+						ul.gnb {
+							li {
+								a {
+									color: $black;
+								}
+								.lnb {
+									display: block;
+									li {
+										a {
+											color: $black;
+										}
+									}
+								}
+							}
+						}
+					}
+					.gnb-setting {
+						.setting {
+							&-info {
+								.login-y {
+									svg {
+										fill: $black;
+									}
+									a,
+									span {
+										color: $black;
+									}
+								}
+								.login-n {
+									svg {
+										fill: $black;
+									}
+									a {
+										color: $black;
+									}
+								}
+							}
+							&-menu {
+								fill: $black;
+							}
+						}
+					}
+				}
+			}
+			.fake-bg {
+				display: block;
+				background-color: $white;
+				transition: all 0.3s;
+			}
+		}
+	}
+	@include tablet {
+		&:hover {
+			nav {
+				display: block !important;
+			}
+		}
+		.gnb {
+			height: 80px;
+			display: flex;
+			&-container {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				.logo {
+					width: 115px;
+					cursor: pointer;
+				}
+				nav {
+					display: none;
+					&.active {
+						display: block !important;
+					}
+
+					ul.gnb {
+						li {
+							a {
+								font-size: 16px;
+								color: $black;
+							}
+							& ~ li {
+								margin-left: 50px;
+							}
+							.lnb {
+								li {
+									a {
+										font-size: 13px;
+										color: $black;
+									}
+								}
+							}
+						}
+					}
+				}
+				.gnb-setting {
+					@include flex(center, center);
+					.setting {
+						&-info {
+							.login-y {
+								height: 35px;
+								margin-bottom: -5px;
+								svg {
+									display: block;
+								}
+								.info-list {
+									top: 35px;
+									z-index: 10000;
+								}
+							}
+						}
+						&-lang {
+							width: 30px;
+							height: 30px;
+							padding: 4px;
+							margin-left: 20px;
+							.lang {
+								&-icon {
+									margin-right: 0px;
+									width: 22px;
+									height: 22px;
+								}
+							}
+						}
+						&-menu {
+							margin-left: 20px;
+							cursor: pointer;
+							fill: $black;
+						}
+					}
+				}
+			}
+		}
+	}
+	@include mobile {
+		&:hover {
+			.setting-menu-m {
+				fill: $black !important;
+			}
+		}
+		.gnb {
+			height: 70px;
+			display: flex;
+			&-container {
+				min-height: 70px;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				.logo {
+					width: 115px;
+					cursor: pointer;
+				}
+				nav {
+					display: none;
+					ul.gnb {
+						li {
+							a {
+								font-size: 16px;
+							}
+							& ~ li {
+								margin-left: 50px;
+							}
+							.lnb {
+								li {
+									a {
+										font-size: 13px;
+									}
+								}
+							}
+						}
+					}
+				}
+				.gnb-setting {
+					@include flex(center, center);
+					.setting {
+						&-info {
+							display: none;
+						}
+						&-lang {
+							width: 30px;
+							height: 30px;
+							padding: 4px;
+							margin-left: 20px;
+							.lang {
+								&-icon {
+									margin-right: 0px;
+									width: 22px;
+									height: 22px;
+								}
+							}
+						}
+						&-menu-m {
+							margin-left: 20px;
+							cursor: pointer;
+							fill: $black;
+						}
+					}
+				}
+			}
+		}
+	}
+	.m-menu-bg {
+		display: block;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.3);
+		.m-menu {
+			width: 70vw;
+			height: 100%;
+			margin: 0 0 0 auto;
+			background: $pale-grey;
+			transition: all 0.2s;
+			transform: translateX(100%);
+			overflow-y: auto;
+			&.m-menu__active {
+				transform: translateX(0%);
+			}
+			.m-menu-header {
+				position: relative;
+				padding: 20px 25px 65px;
+				.close-btn {
+					width: 30px;
+					height: 30px;
+					position: absolute;
+					top: 20px;
+					right: 10px;
+					stroke: $black;
+				}
+				a {
+					font-size: 14px;
+					font-weight: 500;
+					line-height: 1.43;
+					text-align: left;
+					color: $black;
+					@include flex(flex-start, center);
+					svg {
+						margin-left: 5px;
+						width: 4px;
+						fill: $black;
+					}
+					&.underline {
+						position: relative;
+						display: inline-block;
+						&::after {
+							content: '';
+							position: absolute;
+							display: block;
+							top: 20px;
+							left: 0;
+							width: 100%;
+							height: 2px;
+							background: $blueberry;
+						}
+					}
+				}
+			}
+			ul {
+				background: $white;
+				li {
+					width: 100%;
+					a {
+						@include flex(space-between, center);
+						width: 100%;
+						padding: 20px 20px 20px 30px;
+						font-size: 14px;
+						font-weight: 500;
+						line-height: 1.43;
+						color: $black;
+						border-bottom: 1px solid $pinkish-grey;
+					}
+					&:last-child {
+						a {
+							border-bottom: none;
+						}
+					}
+					.m-lnb {
+						background: $pale-grey;
+						transition: 0.5s;
+						overflow: hidden;
+						height: 0;
+						&.m-lnb__active {
+							height: 60px;
+						}
+						li {
+							&:last-child {
+								a {
+									border-bottom: 1px solid $pinkish-grey;
+								}
+							}
+						}
+					}
+				}
+			}
+			ul.m-gnb {
+				margin-bottom: 40px;
+			}
+			ul.m-menu-footer {
+				li {
+					a {
+						svg {
+							width: 5.5px;
+							height: 10px;
+						}
+					}
+				}
+			}
+			.arrow-icon {
+				width: 7px;
+				margin-right: 4px;
+				fill: #555;
+			}
+		}
+	}
+}

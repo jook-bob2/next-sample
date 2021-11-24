@@ -1,0 +1,47 @@
+@import '../mixin';
+@import '../variables';
+.date__select__wrap {
+	display: inline-flex;
+	position: relative;
+	.date_custom_div {
+		display: inline-flex;
+		width: auto;
+		height: 35px;
+		input {
+			padding: 0 8px;
+			max-width: 100%;
+			border: none;
+			font-size: 1em;
+			box-sizing: border-box;
+			color: $warm-grey;
+			width: 70px;
+			border: 1px solid $pinkish-grey;
+			border-radius: 3px;
+		}
+		button {
+			width: 30px;
+			height: 100%;
+			border: none;
+			cursor: pointer;
+			opacity: 0.5;
+			background-color: white;
+			img {
+				width: 1.5em;
+				height: 2.2em;
+			}
+		}
+	}
+	& ~ .date__select__wrap {
+		padding-left: 13px;
+		&:not(:nth-of-type(1)) {
+			&::before {
+				content: '~';
+				display: inline-block;
+				position: absolute;
+				top: 50%;
+				left: 0px;
+				transform: translateY(-50%);
+			}
+		}
+	}
+}

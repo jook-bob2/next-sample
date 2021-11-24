@@ -1,0 +1,10 @@
+#green
+version: '3'
+services:
+    nextjs: 
+        build:
+            context: /home/ec2-user/silkroad-hosting-web
+            dockerfile: ./deploy/Dockerfile
+        restart: unless-stopped
+        ports:
+            - 3002:3000

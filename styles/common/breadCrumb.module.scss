@@ -1,0 +1,22 @@
+@import '../mixin';
+@import '../variables';
+.breadcrumbs {
+	position: absolute;
+	top: 15px;
+	right: 30px;
+	ul {
+		width: 100%;
+		li {
+			display: inline-block;
+			a {
+				font-size: 10px;
+				color: $warm-grey;
+				.arrow {
+					margin: 0 4px;
+					width: 4px;
+					fill: $warm-grey;
+				}
+			}
+		}
+	}
+}

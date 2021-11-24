@@ -1,0 +1,265 @@
+@import '../mixin';
+@import '../variables';
+
+.wrap {
+	width: 100%;
+	.header {
+		width: 100%;
+		background: $deep-white;
+		padding: 65px 0;
+		.title {
+			font-size: 36px;
+			line-height: 1.5;
+			letter-spacing: -0.9px;
+			text-align: center;
+			color: $black;
+		}
+	}
+	.contents {
+		padding: 70px 0 110px;
+	}
+}
+.sub_title {
+	font-size: 16px;
+	line-height: 1.88;
+	letter-spacing: -0.4px;
+	text-align: left;
+	color: #2e2e2e;
+	margin-bottom: 10px;
+}
+.item {
+	margin-bottom: 40px;
+	.item_title {
+		font-size: 16px !important;
+		line-height: 1.88;
+		letter-spacing: -0.4px;
+		font-weight: bold;
+		text-align: left;
+		color: #2e2e2e;
+		margin-bottom: 30px;
+	}
+	.item_desc {
+		li {
+			font-size: 16px;
+			line-height: 1.88;
+			letter-spacing: -0.4px;
+			text-align: left;
+			color: #2e2e2e;
+		}
+		&.numbering {
+			padding-left: 2.5rem;
+			counter-reset: li;
+			li {
+				position: relative;
+				&:before {
+					content: counter(li);
+					counter-increment: li;
+					height: 14px;
+					width: 14px;
+					border: 1px solid $black;
+					border-radius: 50%;
+					color: $black;
+					text-align: center;
+					position: absolute;
+					left: -1.5rem;
+					top: 8px;
+					font-size: 10px;
+					line-height: 1.3;
+				}
+			}
+		}
+
+		.inner_numbering {
+			padding-left: 1.5rem;
+			list-style: decimal;
+			li {
+				list-style: decimal;
+				&::before {
+					content: none;
+				}
+			}
+		}
+		.privacy_indent {
+			padding-left: 1rem;
+			margin: 5px 0;
+			li {
+				line-height: 1.7;
+			}
+		}
+		table {
+			border: 1px solid $pinkish-grey;
+			border-collapse: collapse;
+			margin: 10px 0;
+			thead {
+				background: #f1f1f3;
+			}
+			td,
+			th {
+				padding: 7px 10px;
+				border: 1px solid $pinkish-grey;
+				font-size: 13px;
+				text-align: center;
+			}
+		}
+	}
+}
+@include tablet {
+	.header {
+		padding: 70px 0;
+		.title {
+			font-size: 32px;
+			line-height: 1.47;
+			letter-spacing: -0.8px;
+		}
+	}
+	.contents {
+		padding: 60px 0 70px;
+		.sub_title {
+			font-size: 16px;
+			line-height: 1.43;
+			letter-spacing: -0.35px;
+			font-weight: 500;
+			margin-bottom: 20px;
+		}
+	}
+	.item {
+		margin-bottom: 40px;
+		.item_title {
+			font-size: 15px !important;
+			line-height: 1.43;
+			letter-spacing: -0.35px;
+			font-weight: 500;
+			margin-bottom: 30px;
+		}
+		.item_desc {
+			li {
+				font-size: 14px;
+				line-height: 1.43;
+				letter-spacing: -0.35px;
+				font-weight: 500;
+				& ~ li {
+					margin-top: 5px;
+				}
+			}
+			&.numbering {
+				padding-left: 2rem;
+				li {
+					&:before {
+						height: 14px;
+						width: 14px;
+						position: absolute;
+						left: -1.5rem;
+						top: 4px;
+						font-size: 10px;
+						line-height: 1.2;
+					}
+				}
+			}
+			.privacy_indent {
+				li {
+					line-height: 1.65;
+					margin: 0;
+				}
+			}
+			table {
+				margin: 10px 0;
+				thead {
+					background: #f1f1f3;
+				}
+				td,
+				th {
+					padding: 7px 10px;
+					border: 1px solid $pinkish-grey;
+					font-size: 13px;
+					text-align: center;
+				}
+			}
+			.inner_numbering {
+				padding-left: 1.5rem;
+				li {
+					font-weight: normal;
+					& ~ li {
+						margin-top: 2px;
+					}
+				}
+			}
+		}
+	}
+}
+@include mobile {
+	.header {
+		padding: 40px 0;
+		.title {
+			font-size: 20px;
+			line-height: 1.45;
+			letter-spacing: -0.5px;
+		}
+	}
+	.contents {
+		padding: 40px 0 50px;
+		.sub_title {
+			font-size: 14px;
+			line-height: 1.5;
+			letter-spacing: -0.3px;
+			font-weight: 500;
+			margin-bottom: 15px;
+		}
+	}
+	.item {
+		margin-bottom: 30px;
+		.item_title {
+			font-size: 13px !important;
+			line-height: 1.5;
+			letter-spacing: -0.3px;
+			font-weight: bold;
+			margin-bottom: 20px;
+		}
+		.item_desc {
+			li {
+				font-size: 12px;
+				line-height: 1.5;
+				letter-spacing: -0.3px;
+				font-weight: 500;
+				& ~ li {
+					margin-top: 5px;
+				}
+			}
+			&.numbering {
+				padding-left: 1.5rem;
+				li {
+					&:before {
+						height: 13px;
+						width: 13px;
+						position: absolute;
+						left: -1.5rem;
+						top: 3px;
+						font-size: 9px;
+						line-height: 1.1;
+					}
+				}
+			}
+			.privacy_indent {
+				li {
+					line-height: 1.5;
+					margin: 0;
+				}
+			}
+			table {
+				margin: 15px 0 10px;
+				td,
+				th {
+					font-size: 12px;
+				}
+			}
+			.inner_numbering {
+				padding-left: 1rem;
+				li {
+					font-weight: normal;
+					& ~ li {
+						margin-top: 2px;
+					}
+				}
+			}
+		}
+	}
+}

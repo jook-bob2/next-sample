@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="17" viewBox="0 0 48 17">
+    <g>
+        <g transform="translate(-298 -376) translate(-586 -65)">
+            <rect width="48" height="17" fill="#4d31e9" rx="3" transform="translate(884 441)"/>
+            <text fill="#fff" font-family="NotoSansCJKkr-Regular, Noto Sans CJK KR" font-size="10px" transform="translate(890 454)">
+                <tspan x="0" y="0">답변완료</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
