@@ -1,9 +1,14 @@
 import React from 'react'
+import DashboardMarketTrend from './marketTrend/DashboardMarketTrend'
+import DashboardTodaysCommon from './todaysCommon/DashboardTodaysCommon'
+import DashboardTodaysPowerPlant from './todaysPowerPlant/DashboardTodaysPowerPlant'
 
 export default function DashboardComponent() {
 	return (
-		<article>
-			<h1>대시보드 컴포넌트</h1>
-		</article>
+		<main>
+			<DashboardTodaysCommon />
+			<DashboardTodaysPowerPlant />
+			<DashboardMarketTrend />
+		</main>
 	)
 }
