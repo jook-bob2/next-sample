@@ -95,16 +95,29 @@ function AlertModal() {
 	}
 
 	return (
-		<Modal open={open} role="alertdialog" aria-live="assertive" aria-modal="true">
-			<div className="modal-contents">
-				<p>{msg}</p>
-			</div>
-			<div className="modal-footer">
-				<button className="confirm" id="alertSuccess" onClick={() => handleClickClose()}>
-					<span>{t('common.btnY')}</span>
-				</button>
-			</div>
-		</Modal>
+		<>
+			{open === true && (
+				<div
+					style={{
+						width: '100vw',
+						height: '100vh',
+						position: 'fixed',
+						background: 'rgba(0,0,0,0.2)',
+						zIndex: 99998,
+					}}>
+					<Modal open={open} role="alertdialog" aria-live="assertive" aria-modal="true">
+						<div className="modal-contents">
+							<p>{msg}</p>
+						</div>
+						<div className="modal-footer">
+							<button className="confirm" id="alertSuccess" onClick={() => handleClickClose()}>
+								<span>{t('common.btnY')}</span>
+							</button>
+						</div>
+					</Modal>
+				</div>
+			)}
+		</>
 	)
 }
 function ConfirmModal() {
@@ -117,19 +130,32 @@ function ConfirmModal() {
 	}
 
 	return (
-		<Modal open={open} role="alertdialog" aria-live="assertive" aria-modal="true">
-			<div className="modal-contents">
-				<p>{msg}</p>
-			</div>
-			<div className="modal-footer">
-				<button className="cancel" id="confirmCancel" onClick={() => handleClickClose()}>
-					<span>{t('common.btnN')}</span>
-				</button>
-				<button className="confirm" id="confirmSuccess" onClick={() => handleClickClose()}>
-					<span>{t('common.btnY')}</span>
-				</button>
-			</div>
-		</Modal>
+		<>
+			{open === true && (
+				<div
+					style={{
+						width: '100vw',
+						height: '100vh',
+						position: 'fixed',
+						background: 'rgba(0,0,0,0.2)',
+						zIndex: 99998,
+					}}>
+					<Modal open={open} role="alertdialog" aria-live="assertive" aria-modal="true">
+						<div className="modal-contents">
+							<p>{msg}</p>
+						</div>
+						<div className="modal-footer">
+							<button className="cancel" id="confirmCancel" onClick={() => handleClickClose()}>
+								<span>{t('common.btnN')}</span>
+							</button>
+							<button className="confirm" id="confirmSuccess" onClick={() => handleClickClose()}>
+								<span>{t('common.btnY')}</span>
+							</button>
+						</div>
+					</Modal>
+				</div>
+			)}
+		</>
 	)
 }
 export { AlertModal, ConfirmModal }

@@ -1,6 +1,6 @@
 import React from 'react'
 import Meta from '@/components/ui/common/Meta'
-import DashboardComponent from '@/components/dashboard/DashboardComponent'
+import DashboardMainComponent from '@/components/dashboard/DashboardMainComponent'
 
 /*
  * 메인 페이지 프로그램
@@ -9,7 +9,7 @@ export default function Dashboard() {
 	return (
 		<>
 			<Meta />
-			<DashboardComponent />
+			<DashboardMainComponent />
 		</>
 	)
 }

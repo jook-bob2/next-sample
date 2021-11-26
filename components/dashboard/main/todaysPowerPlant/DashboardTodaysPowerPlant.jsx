@@ -3,8 +3,8 @@ import TodaysByPowerPlant from './byPowerPlant/TodaysByPowerPlant'
 
 export default function DashboardTodaysPowerPlant() {
 	return (
-		<section>
+		<article>
 			<TodaysByPowerPlant />
-		</section>
+		</article>
 	)
 }

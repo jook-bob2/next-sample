@@ -6,11 +6,11 @@ import TodaysWeather from './weather/TodaysWeather'
 
 export default function TodaysByPowerPlant() {
 	return (
-		<section>
+		<div>
 			<TodaysPowerTime />
 			<TodaysExpectedReturn />
 			<TodaysWeather />
 			<TodaysInverterStatus />
-		</section>
+		</div>
 	)
 }

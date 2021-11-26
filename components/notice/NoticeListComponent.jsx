@@ -2,10 +2,10 @@ import React from 'react'
 
 export default function NoticeListComponent() {
 	return (
-		<main>
-			<section>
+		<section>
+			<header style={{ border: 'solid 1px red' }}>
 				<h1>공지사항 목록</h1>
-			</section>
-		</main>
+			</header>
+		</section>
 	)
 }

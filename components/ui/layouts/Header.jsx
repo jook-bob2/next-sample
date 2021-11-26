@@ -265,25 +265,49 @@ export default function Header() {
 							onMouseOver={(e) => handleMousePos(e.type)}
 							onMouseLeave={(e) => handleMousePos(e.type)}>
 							<li>
-								<Link href={{ pathname: '/test' }}>
-									<a>{'Test'}</a>
+								<Link href={{ pathname: '/' }}>
+									<a>{'대시보드'}</a>
 								</Link>
 								<ul className={`lnb ${menuOpen ? 'active' : ''}`}>
 									<li>
-										<Link href={{ pathname: '/test' }}>
-											<a>{'Test'}</a>
+										<Link href={{ pathname: '/' }}>
+											<a>{'대시보드'}</a>
 										</Link>
 									</li>
 								</ul>
 							</li>
 							<li>
-								<Link href={{ pathname: '/auth' }}>
-									<a>{'Auth'}</a>
+								<Link href={{ pathname: '/inverter/inverter-info' }}>
+									<a>{'인버터 정보'}</a>
 								</Link>
 								<ul className={`lnb ${menuOpen ? 'active' : ''}`}>
 									<li>
-										<Link href={{ pathname: '/auth' }}>
-											<a>{'Auth'}</a>
+										<Link href={{ pathname: '/inverter/inverter-info' }}>
+											<a>{'인버터 정보'}</a>
+										</Link>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<Link href={{ pathname: '/power-plant/power-plant-info' }}>
+									<a>{'발전소 정보'}</a>
+								</Link>
+								<ul className={`lnb ${menuOpen ? 'active' : ''}`}>
+									<li>
+										<Link href={{ pathname: '/power-plant/power-plant-info' }}>
+											<a>{'발전소 정보'}</a>
+										</Link>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<Link href={{ pathname: '/my-asset/asset-status' }}>
+									<a>{'자산현황'}</a>
+								</Link>
+								<ul className={`lnb ${menuOpen ? 'active' : ''}`}>
+									<li>
+										<Link href={{ pathname: '/my-asset/asset-status' }}>
+											<a>{'자산현황'}</a>
 										</Link>
 									</li>
 								</ul>
@@ -390,25 +414,49 @@ export default function Header() {
 							*/}
 							<li>
 								<a onTouchStart={() => handleClickSpreadMobMnu(0)}>
-									{'Test'}
+									{'대시보드'}
 									{spreadMobMnuList.includes(0) ? <MenuMinusIcon /> : <MenuPlusIcon />}
 								</a>
 								<ul className={`m-lnb ${spreadMobMnuList.includes(0) ? 'm-lnb__active' : ''}`}>
 									<li>
-										<Link href={{ pathname: '/test' }}>
-											<a>{'Test'}</a>
+										<Link href={{ pathname: '/' }}>
+											<a>{'대시보드'}</a>
 										</Link>
 									</li>
 								</ul>
 							</li>
 							<li>
 								<a onTouchStart={() => handleClickSpreadMobMnu(1)}>
-									{'Auth'} {spreadMobMnuList.includes(1) ? <MenuMinusIcon /> : <MenuPlusIcon />}
+									{'인버터'} {spreadMobMnuList.includes(1) ? <MenuMinusIcon /> : <MenuPlusIcon />}
 								</a>
 								<ul className={`m-lnb ${spreadMobMnuList.includes(1) ? 'm-lnb__active' : ''}`}>
 									<li>
-										<Link href={{ pathname: '/auth' }}>
-											<a>{'Auth'}</a>
+										<Link href={{ pathname: '/inverter/inverter-info' }}>
+											<a>{'인버터 정보'}</a>
+										</Link>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a onTouchStart={() => handleClickSpreadMobMnu(2)}>
+									{'발전소'} {spreadMobMnuList.includes(2) ? <MenuMinusIcon /> : <MenuPlusIcon />}
+								</a>
+								<ul className={`m-lnb ${spreadMobMnuList.includes(2) ? 'm-lnb__active' : ''}`}>
+									<li>
+										<Link href={{ pathname: '/power-plant/power-plant-info' }}>
+											<a>{'발전소 정보'}</a>
+										</Link>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a onTouchStart={() => handleClickSpreadMobMnu(3)}>
+									{'자산현황'} {spreadMobMnuList.includes(3) ? <MenuMinusIcon /> : <MenuPlusIcon />}
+								</a>
+								<ul className={`m-lnb ${spreadMobMnuList.includes(3) ? 'm-lnb__active' : ''}`}>
+									<li>
+										<Link href={{ pathname: '/my-asset/asset-status' }}>
+											<a>{'자산현황'}</a>
 										</Link>
 									</li>
 								</ul>
