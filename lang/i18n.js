@@ -49,7 +49,7 @@ export function getLocale() {
 // 지역에 따른 Resource에 정의한 키 값 반환
 function getResourceKey(lang) {
 	const array = []
-	Object.keys(resource).forEach(r => {
+	Object.keys(resource).forEach((r) => {
 		if (lang.includes(r)) array.push(r)
 	})
 

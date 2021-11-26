@@ -1,7 +1,7 @@
 const path = require('path')
 
 module.exports = {
-	webpack: config => {
+	webpack: (config) => {
 		config.resolve.alias['@'] = path.resolve(__dirname, '/')
 		config.resolve.alias['@comp'] = path.resolve(__dirname, 'components/')
 		config.resolve.alias['@container'] = path.resolve(__dirname, 'containers/')

@@ -31,7 +31,7 @@ export function UserProvider({ children }) {
 	 */
 	useEffect(() => {
 		const eventBus = new EventBus()
-		eventBus.$on('fetchEvent', response => {
+		eventBus.$on('fetchEvent', (response) => {
 			const { ssr, authentication } = response
 			if (ssr === false && authentication === true) {
 				userAccess('csr')
@@ -64,7 +64,7 @@ export function UserProvider({ children }) {
 	}
 
 	function authenticationPathIndex() {
-		return authPathList.findIndex(path => {
+		return authPathList.findIndex((path) => {
 			let authPath = path
 			if (path.includes('/**')) authPath = path.replace('/**', '')
 			return router.pathname.includes(authPath)

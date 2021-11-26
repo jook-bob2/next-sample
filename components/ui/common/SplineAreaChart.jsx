@@ -15,7 +15,7 @@ import { EventTracker } from '@devexpress/dx-react-chart'
 import { curveCatmullRom, area } from 'd3-shape'
 import { useTranslation } from 'react-i18next'
 
-const Area = props => (
+const Area = (props) => (
 	<AreaSeries.Path
 		{...props}
 		path={area()

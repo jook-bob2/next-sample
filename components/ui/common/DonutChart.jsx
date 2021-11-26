@@ -101,7 +101,7 @@ export default function DonutChart({ chartData }) {
 
 					{/* 국가별 전송량(트래픽) 표시 */}
 					<ul className={style.chart_label}>
-						{countryTraffic.map(i => (
+						{countryTraffic.map((i) => (
 							<li key={i}>
 								<span className={style.chart_label_wordbreak}>{i[0]}</span>
 								<span>{i[1]}</span>

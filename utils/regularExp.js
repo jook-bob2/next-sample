@@ -1,35 +1,35 @@
 export const utils = {
 	regEx: {
-		email: param => {
+		email: (param) => {
 			return /^[0-9a-zA-Z]([-_\\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/i.test(param)
 		},
-		image: param => {
+		image: (param) => {
 			return /\.(png|jpe?g|gif)(\?.*)?$/.test(param)
 		},
-		number: param => {
+		number: (param) => {
 			return /[0-9]/g.test(param)
 		},
-		password: param => {
+		password: (param) => {
 			// 대/소문자 상관없이 8~15자까지 기호를 포함
 			return /^(?=.*[a-zA-Z])(?=.*[!@#$%^*+=-])(?=.*[0-9]).{8,15}$/.test(param)
 		},
-		phoneNo: param => {
+		phoneNo: (param) => {
 			// 지역번호, 서울번호, 핸드폰번호
 			return /(^02|^0505|^1[0-9]{3}|^0[0-9]{2})([0-9]+)([0-9]{4})$/.test(param)
 		},
-		accountId: param => {
+		accountId: (param) => {
 			// 호스팅 계정 아이디
 			return /^[a-z0-9]{4,16}$/.test(param)
 		},
-		phoneNo2: param => {
+		phoneNo2: (param) => {
 			// 호스팅 관리자 전화번호
 			return /^[0-9]{10,11}$/.test(param)
 		},
-		domain: param => {
+		domain: (param) => {
 			// 호스팅 도메인
 			return /^([0-9a-zA-Z-]+\.)+[a-zA-Z]{2,6}(:[0-9]+)?(\/\S*)?$/.test(param)
 		},
-		specialChar: param => {
+		specialChar: (param) => {
 			return /[^(\\{\\}\\/?,;:|*~`!^\\+<>@\\#$%&\\\\=\\'\\")]$/.test(param)
 		},
 	},
@@ -40,10 +40,10 @@ export const utils = {
 		 * params : str(문자열)
 		 * return : byte(byte count)
 		 * */
-		threeByteCount: str => {
+		threeByteCount: (str) => {
 			return str
 				.split('')
-				.map(s => s.charCodeAt(0))
+				.map((s) => s.charCodeAt(0))
 				.reduce((prev, c) => prev + (c === 10 ? 3 : c >> 7 ? 3 : 1), 0)
 		},
 		/**
@@ -52,10 +52,10 @@ export const utils = {
 		 * params : str(문자열)
 		 * return : byte(byte count)
 		 * */
-		twoByteCount: str => {
+		twoByteCount: (str) => {
 			return str
 				.split('')
-				.map(s => s.charCodeAt(0))
+				.map((s) => s.charCodeAt(0))
 				.reduce((prev, c) => prev + (c === 10 ? 2 : c >> 7 ? 2 : 1), 0)
 		},
 	},
@@ -65,7 +65,7 @@ export const utils = {
 		 * params : phoneNo(string)
 		 * return : string
 		 * */
-		phone: phoneNo => {
+		phone: (phoneNo) => {
 			if (phoneNo) {
 				return phoneNo
 					.replace(/[^0-9]/g, '')
@@ -104,13 +104,13 @@ export const utils = {
 		/**
 		 * 숫자 포맷
 		 */
-		number: number => {
+		number: (number) => {
 			return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
 		},
 		/**
 		 * 숫자만 허용 포맷
 		 */
-		onlyNumber: number => {
+		onlyNumber: (number) => {
 			return number.toString().replace(/[^0-9]/g, '')
 		},
 	},

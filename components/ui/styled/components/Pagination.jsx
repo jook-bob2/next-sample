@@ -54,7 +54,7 @@ function PageListComponent({ countArr, activePage, handleClickPageChange }) {
 	const lastBottomNum = activePage - (activePage % 10) + 10
 	return countArr.slice(firstBottomNum, lastBottomNum).map((value, index) => (
 		<li key={index} className={activePage === value ? 'active' : ''}>
-			<a href="#" onClick={e => handleClickPageChange(e, value)}>
+			<a href="#" onClick={(e) => handleClickPageChange(e, value)}>
 				{value + 1}
 			</a>
 		</li>
@@ -83,7 +83,7 @@ function Pagination({ totalPages, activePage, onPageChange, options }) {
 			{totalPages > 0 && (
 				<Paging>
 					<li>
-						<a href="#" onClick={e => handleClickPageChange(e, activePage - 1)}>
+						<a href="#" onClick={(e) => handleClickPageChange(e, activePage - 1)}>
 							<Prev />
 						</a>
 					</li>
@@ -94,7 +94,7 @@ function Pagination({ totalPages, activePage, onPageChange, options }) {
 						handleClickPageChange={handleClickPageChange}
 					/>
 					<li>
-						<a href="#" onClick={e => handleClickPageChange(e, activePage + 1)}>
+						<a href="#" onClick={(e) => handleClickPageChange(e, activePage + 1)}>
 							<Next />
 						</a>
 					</li>

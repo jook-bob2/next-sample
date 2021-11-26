@@ -37,10 +37,10 @@ export default function Error({ error }) {
 			if (code === 412) {
 				// 헤더에 언어코드가 존재하지 않는 경우 갱신
 				languageSetting()
-					.then(res => {
+					.then((res) => {
 						if (res) router.reload()
 					})
-					.catch(err => {
+					.catch((err) => {
 						console.error(err)
 					})
 			}
@@ -50,7 +50,7 @@ export default function Error({ error }) {
 	function languageSetting() {
 		const lang = getLocale()
 		return new Promise((resolve, reject) => {
-			Object.values(resource).forEach(l => {
+			Object.values(resource).forEach((l) => {
 				if (l.value === lang) useLanguage({ lang, langText: l.text })
 			})
 

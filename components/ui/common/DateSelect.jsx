@@ -69,7 +69,7 @@ export default function DateSelect({
 		<div className={styles.date__select__wrap}>
 			<DatePicker
 				selected={selected}
-				onChange={date => onChange(date)}
+				onChange={(date) => onChange(date)}
 				dateFormat={format}
 				locale={locale}
 				isClearable={isClearable}

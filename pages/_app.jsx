@@ -18,10 +18,10 @@ export default function MyApp({ Component, pageProps }) {
 		) {
 			window.addEventListener('load', function () {
 				navigator.serviceWorker.register('/static/sw.js').then(
-					registration => {
+					(registration) => {
 						console.info('Service Worker registration successful with scope: ', registration.scope)
 					},
-					err => {
+					(err) => {
 						console.info('Service Worker registration failed: ', err)
 					},
 				)

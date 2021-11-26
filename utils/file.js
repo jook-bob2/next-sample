@@ -30,10 +30,10 @@ export async function getBase64(event) {
 		fDto.setFile(response.getFile())
 		fDto.setFileName(response.getFileName())
 
-		return new Promise(resolve => {
+		return new Promise((resolve) => {
 			const reader = new FileReader()
 			reader.readAsDataURL(response.getFile())
-			reader.onload = e => {
+			reader.onload = (e) => {
 				fDto.setFileReader(e.target.result)
 				resolve(fDto)
 			}
@@ -164,7 +164,7 @@ function fileValidation(event) {
 	}
 
 	try {
-		return new Promise(resolve => {
+		return new Promise((resolve) => {
 			const img = new Image()
 
 			// 가로 세로 사이즈 확인

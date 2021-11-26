@@ -20,7 +20,7 @@ export function AlertProvider({ children }) {
 
 		alertDispatch({ type: SHOW_ALERT, msg })
 
-		return new Promise(resolve => {
+		return new Promise((resolve) => {
 			setTimeout(() => {
 				const successElement = document.querySelector('#alertSuccess')
 				if (successElement) {

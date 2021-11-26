@@ -20,27 +20,27 @@ export const storageUtil = {
 	/*
 	 * 로컬 스토리지에 JSON 형식으로 저장된 값을 오브젝트로 반환
 	 */
-	getItem: key => {
+	getItem: (key) => {
 		if (!localStorage.getItem(key)) return false
 		return JSON.parse(localStorage.getItem(key))
 	},
 	/*
 	 * 로컬 스토리지에 있는 데이터 삭제
 	 */
-	remove: key => {
+	remove: (key) => {
 		localStorage.removeItem(key)
 	},
 	/*
 	 * 글 등록 시 image가 있으면 storage의 파일 여부를 Y로 변경
 	 */
-	setFileUploadComplete: content => {
+	setFileUploadComplete: (content) => {
 		if (storageUtil.getItem(STORAGE_FILE_CD)) {
 			const fileList = storageUtil.getItem(STORAGE_FILE_CD).data
 			if (fileList.length > 0) {
-				fileList.forEach(f => {
+				fileList.forEach((f) => {
 					if (content.includes(f.fileUrl)) {
 						f.insertYn = 'Y'
-						storageUtil.setItem(STORAGE_FILE_CD, [...fileList.filter(f2 => f2.key !== f.key), f])
+						storageUtil.setItem(STORAGE_FILE_CD, [...fileList.filter((f2) => f2.key !== f.key), f])
 					}
 				})
 			}

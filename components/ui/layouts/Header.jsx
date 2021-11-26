@@ -162,7 +162,7 @@ export default function Header() {
 	 */
 	function handleClickSpreadMobMnu(menuIndex) {
 		if (spreadMobMnuList.indexOf(menuIndex) === -1) setSpreadMobMnuList([...spreadMobMnuList, menuIndex])
-		else setSpreadMobMnuList(spreadMobMnuList.filter(m => m !== menuIndex))
+		else setSpreadMobMnuList(spreadMobMnuList.filter((m) => m !== menuIndex))
 	}
 
 	/*
@@ -172,7 +172,7 @@ export default function Header() {
 		let langValue, langText
 		const resourceKeys = Object.keys(resource)
 		const resourceValues = Object.values(resource)
-		const lIndex = resourceKeys.findIndex(l => l === langState.lang)
+		const lIndex = resourceKeys.findIndex((l) => l === langState.lang)
 
 		if (lIndex >= resourceKeys.length - 1) {
 			langValue = resourceValues[0].value
@@ -262,8 +262,8 @@ export default function Header() {
 					<nav className={'gnb-nav-container ' + (menuOpen ? 'active' : '')}>
 						<ul
 							className="gnb"
-							onMouseOver={e => handleMousePos(e.type)}
-							onMouseLeave={e => handleMousePos(e.type)}>
+							onMouseOver={(e) => handleMousePos(e.type)}
+							onMouseLeave={(e) => handleMousePos(e.type)}>
 							<li>
 								<Link href={{ pathname: '/test' }}>
 									<a>{'Test'}</a>
@@ -347,7 +347,7 @@ export default function Header() {
 						)}
 						{(isMobile || isTablet) && (
 							<MenuIcon
-								onTouchEnd={e => handleTouchToggleMenuMMobile(e, true)}
+								onTouchEnd={(e) => handleTouchToggleMenuMMobile(e, true)}
 								className="setting-menu-m m-y"
 								width="22"
 								height="18"
@@ -377,7 +377,7 @@ export default function Header() {
 								</Link>
 							)}
 							<CloseIcon
-								onTouchStart={e => handleTouchToggleMenuMMobile(e, false)}
+								onTouchStart={(e) => handleTouchToggleMenuMMobile(e, false)}
 								className="close-btn"
 							/>
 						</div>

@@ -26,9 +26,9 @@ export function LangProvider({ children }) {
 	 */
 	useEffect(() => {
 		const eventBus = new EventBus()
-		eventBus.$on('emitLanguage', lang => {
+		eventBus.$on('emitLanguage', (lang) => {
 			if (lang !== langState.lang || (lang && !getCookieValue(COOKIELANG.LANG))) {
-				Object.values(resource).forEach(l => {
+				Object.values(resource).forEach((l) => {
 					if (l.value === lang) useLanguage({ lang, langText: l.text })
 				})
 			}
@@ -42,7 +42,7 @@ export function LangProvider({ children }) {
 	useEffect(() => {
 		if (!getCookieValue(COOKIELANG.LANG)) {
 			const lang = getLocale()
-			Object.values(resource).forEach(l => {
+			Object.values(resource).forEach((l) => {
 				if (l.value === lang) useLanguage({ lang, langText: l.text })
 			})
 		}
@@ -64,7 +64,7 @@ export function LangProvider({ children }) {
 		}
 
 		if (lang) {
-			Object.values(resource).forEach(l => {
+			Object.values(resource).forEach((l) => {
 				if (l.value === lang) useLanguage({ lang, langText: l.text })
 			})
 		}

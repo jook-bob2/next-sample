@@ -7,7 +7,7 @@ import { isNotRefreshUrl, validateTimeAccessToken } from './validToken'
  */
 function setInterceptors(instance) {
 	instance.interceptors.request.use(
-		config => {
+		(config) => {
 			// 서버 Exception 메시지 언어 셋팅
 			const { Language: lang, ssr } = config.headers
 
@@ -47,15 +47,15 @@ function setInterceptors(instance) {
 
 			return config
 		},
-		error => {
+		(error) => {
 			return Promise.reject(error)
 		},
 	)
 	instance.interceptors.response.use(
-		response => {
+		(response) => {
 			return response.data
 		},
-		error => {
+		(error) => {
 			const { response, config } = error
 			if (response) {
 				// 서버 오류일 경우

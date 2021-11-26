@@ -24,7 +24,7 @@ const Modal = styled.div`
 	border: solid 1px #e8e8e8;
 	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
 	z-index: 99999;
-	display: ${props => (props.open ? 'flex' : 'none') || 'none'};
+	display: ${(props) => (props.open ? 'flex' : 'none') || 'none'};
 	.modal-contents {
 		display: -ms-flexbox;
 		-webkit-display: flex;
