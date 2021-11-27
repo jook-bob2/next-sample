@@ -4,20 +4,13 @@ import moment from 'moment'
 import HeaderRoute from '@/components/ui/styled/components/HeaderRoute'
 import { useRouter } from 'next/router'
 
-export default function MyAssetTodaysExpectedRevenue() {
-	/* datepicker */
+export default function MyAssetLinkedDetail() {
 	const [startDate] = useState(initialStartDt) //달력의 시작일
 	const { push } = useRouter()
-
 	return (
 		<>
-			<HeaderRoute onClick={() => push('/')} title="오늘의 예상 수익" />
+			<HeaderRoute onClick={() => push('/my-asset/asset-status')} title="일광 발전소(1KW)" />
 			<article>
-				<div>
-					<select>
-						<option>일광 발전소(1KW)</option>
-					</select>
-				</div>
 				<div>
 					<div>
 						<span>일</span>

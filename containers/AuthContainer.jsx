@@ -11,7 +11,7 @@ export default function AuthContainer({ children }) {
 	useEffect(() => {
 		if (!cookies.LOGIN_INFO) {
 			setTimeout(() => {
-				$alert('권한이 없습니다.').then(() => {
+				$alert('로그인 후 이용해주세요.').then(() => {
 					replace('/')
 				})
 			}, 0)
