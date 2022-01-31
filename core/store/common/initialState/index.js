@@ -15,6 +15,9 @@ export const userInitialState = {
 	id: 0,
 	name: '',
 	email: '',
+	accessToken: '',
+	refreshToken: '',
+	isLoggined: false,
 }
 
 // 언어 상태

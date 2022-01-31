@@ -44,17 +44,19 @@ export function setSsrHeader(headers) {
 	if (cookie && !cookie.includes(COOKIELANG.LANG))
 		cookie += `; ${COOKIELANG.LANG}=${headers['accept-language'].split(',')[0]}`
 
-	setAxiosHeader('ssr', true, false)
+	setAxiosHeader(USER.IS_SSR, true, false)
 
 	setAxiosHeader(COOKIELANG.LANGUAGE, getCookieValue(COOKIELANG.LANG, cookie), false)
 
 	if (getCookieValue(USER.LOGIN_INFO, cookie)) {
-		const accessToken = decode(getCookieValue(USER.LOGIN_INFO, cookie), {
+		const tokenInfo = decode(getCookieValue(USER.LOGIN_INFO, cookie), {
 			cookie: {
 				data: cookie,
 				name: SECURE.PSID1,
 			},
 		})
+
+		const accessToken = tokenInfo.split(':')[0]
 
 		setAxiosHeader(USER.AUTHORIZATION, accessToken, true)
 

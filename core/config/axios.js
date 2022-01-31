@@ -1,7 +1,13 @@
-import { EventBus } from '@/utils/eventBus'
+import { decode } from '@/utils/crypto'
 import axios from 'axios'
-import { isNotRefreshUrl, validateTimeAccessToken } from './validToken'
+import { getCookieValue } from './cookie'
+import { validateTimeAccessToken } from './validToken'
+import { constants as configConstants } from '@/core/config/constants'
+import userConstants from '@/constants/userConstants'
+import { EventBus } from '@/utils/eventBus'
 
+const { USER, SECURE } = configConstants
+const { AUTHORIZATION, BAD_REQUEST, UNKNOWN_ERROR, UNAUTHORIZED_CODE, UNAUTHORIZED } = userConstants
 /*
  * axios 인터셉터 설정
  */
@@ -9,39 +15,35 @@ function setInterceptors(instance) {
 	instance.interceptors.request.use(
 		(config) => {
 			// 서버 Exception 메시지 언어 셋팅
-			const { Language: lang, ssr } = config.headers
+			const { isSsr } = config.headers
 
-			if (!lang) {
-				// 언어코드가 없을 경우 오류 유발
-				config.code = 412
-				config.msg = 'Client headers do not match server request headers.'
-				return Promise.reject({ config })
-			}
-
-			config.params = { ...config.params, lang }
-
-			const eventBus = new EventBus()
-			// SSR이 아닐 경우 언어코드 이벤트 전달
-			if (!ssr) eventBus.$emit('emitLanguage', lang)
-
-			if (config.authentication) {
+			if (isSsr === true) {
+				// 서버사이드 렌더링인 경우
 				const { Authorization: accessToken } = config.headers
-
-				if (!accessToken) {
-					// 토큰이 없는 경우
-					config.code = 403
-					config.msg = 'Forbidden has occurred.'
-					return Promise.reject({ config })
+				if (validateTimeAccessToken(accessToken)) {
+					config.headers[AUTHORIZATION] = accessToken
 				}
+			} else {
+				if (getCookieValue(USER.LOGIN_INFO)) {
+					const tokenInfo = decode(getCookieValue(USER.LOGIN_INFO), {
+						cookie: {
+							name: SECURE.PSID1,
+						},
+					})
 
-				// 권한이 없는 경우
-				if (ssr === true && !validateTimeAccessToken(accessToken)) {
-					config.code = 401
-					config.msg = 'Unauthorization'
-					return Promise.reject({ config })
-				} else if (!ssr && isNotRefreshUrl(config.url)) {
-					// SSR이 아닐 경우 토큰 검증 이벤트 전달
-					eventBus.$emit('fetchEvent', { ssr: false, authentication: config.authentication })
+					const accessToken = tokenInfo.split(':')[0]
+					const refreshToken = tokenInfo.split(':')[1]
+					if (validateTimeAccessToken(accessToken)) {
+						if (config.url !== '/user/silent-refresh') {
+							const eventBus = new EventBus()
+							eventBus.$emit('fetchEvent', {
+								authentication: config.authentication,
+								accessToken,
+								refreshToken,
+							})
+						}
+						config.headers[AUTHORIZATION] = accessToken
+					}
 				}
 			}
 
@@ -56,7 +58,10 @@ function setInterceptors(instance) {
 			return response.data
 		},
 		(error) => {
-			const { response, config } = error
+			const { response } = error
+			// const originalRequest = config
+			// console.log(response)
+
 			if (response) {
 				// 서버 오류일 경우
 				// 아래와 같은 데이터가 반환 된다.
@@ -69,41 +74,23 @@ function setInterceptors(instance) {
 				if (response.data) {
 					const { code, msg, status, error } = response.data
 					if (code && msg) {
+						if (code === UNAUTHORIZED_CODE) {
+							return Promise.reject({ success: false, code, msg })
+						}
 						return Promise.reject({ success: false, code, msg })
 					}
 					if (status && error && status === 404) {
 						return Promise.reject({ success: false, code: status, msg: error })
 					}
 				} else if (response.status === 400) {
-					return Promise.reject({ success: false, code: response.status, msg: 'Bad request' })
+					return Promise.reject({ success: false, code: response.status, msg: BAD_REQUEST })
+				} else if (response.status === 401) {
+					return Promise.reject({ success: false, code: UNAUTHORIZED_CODE, msg: UNAUTHORIZED })
 				}
-			} else if (config && config.code && config.msg) {
-				// config 오류일 경우
-				// 아래와 같은 데이터가 반환 된다.
-				// adapter: ƒ xhrAdapter(config)
-				// authentication: false
-				// baseURL: "http://localhost:8080"
-				// code: 403
-				// data: {email: "sha256@naver.com", passwd: "asdf1414!"}
-				// headers: {common: {…}, delete: {…}, get: {…}, head: {…}, post: {…}, …}
-				// maxBodyLength: -1
-				// maxContentLength: -1
-				// method: "post"
-				// msg: "Forbidden has occurred."
-				// params: {lang: "ko"}
-				// timeout: 0
-				// transformRequest: [ƒ]
-				// transformResponse: [ƒ]
-				// url: "/user/login"
-				// validateStatus: ƒ validateStatus(status)
-				// xsrfCookieName: "XSRF-TOKEN"
-				// xsrfHeaderName: "X-XSRF-TOKEN"
-				const { code, msg } = config
-				return Promise.reject({ success: false, code, msg })
 			}
 
 			// 알 수 없는 오류일 경우
-			return Promise.reject({ success: false, code: 40999, msg: 'An unknown error has occurred.' })
+			return Promise.reject({ success: false, code: 40999, msg: UNKNOWN_ERROR })
 		},
 	)
 	return instance

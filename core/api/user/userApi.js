@@ -2,10 +2,10 @@ import { authClient, noneAuthClient } from '@/core/config/axios'
 
 /*
  * 리프레쉬 토큰
- * @param loginInfo(email)
+ * @param refresh token, access token
  */
-export async function getRefreshToken(loginInfo) {
-	return await authClient.post('/user/silent-refresh', loginInfo)
+export async function postSilentRefresh(silentRequest) {
+	return await authClient.post('/user/silent-refresh', silentRequest)
 }
 
 /*
@@ -13,14 +13,14 @@ export async function getRefreshToken(loginInfo) {
  * @param loginInfo(email, passwd)
  */
 export async function postUserLogin(loginInfo) {
-	return await noneAuthClient.post('/user/login', loginInfo)
+	return await noneAuthClient.post('/user/sign/in', loginInfo)
 }
 
 /*
  * 로그아웃
  */
 export async function postUserLogout() {
-	return await authClient.post(`/user/logout`)
+	return await authClient.post(`/user/sign/out`)
 }
 
 /*

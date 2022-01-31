@@ -6,6 +6,7 @@ export const constants = {
 	USER: {
 		AUTHORIZATION: 'Authorization',
 		LOGIN_INFO: 'LOGIN_INFO',
+		IS_SSR: 'isSsr',
 	},
 	SECURE: {
 		PSID1: '1PSID',

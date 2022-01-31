@@ -1,6 +1,6 @@
 import React, { useCallback, useContext, useEffect, useState } from 'react'
 import Link from 'next/link'
-import { LangStateContext, UserStateContext } from '@/core/store/common/create'
+import { LangStateContext } from '@/core/store/common/create'
 // local icon
 import PersonIcon from '@/public/static/icon/person.svg'
 import MenuIcon from '@/public/static/icon/menu.svg'
@@ -12,15 +12,10 @@ import MenuMinusIcon from '@/public/static/icon/menu_minus.svg'
 import { useTranslation } from 'react-i18next'
 import { useUserContext } from '@/core/store/api/providers/UserApiProvider'
 import { POST_USER_LOGOUT } from '@/core/store/api/create/userCreate'
-import { removeUserCookie } from '@/core/config/cookie'
-import { useCookies } from 'react-cookie'
 import { useRouter } from 'next/router'
-import { userInitialState } from '@/core/store/common/initialState'
-import { constants } from '@store/common/constants'
 import { useAlertContext } from '@/core/store/common/providers/AlertProvider'
 import { resource } from '@/lang/resource'
-
-const { SET_INIT_USER: SET_INIT_USER_CONST } = constants
+import { useUser } from '@/core/store/common/providers/UserProvider'
 
 // 디바이스 초기화 상태
 const initialDeviceState = {
@@ -33,10 +28,8 @@ const initialDeviceState = {
 export default function Header() {
 	const { t } = useTranslation()
 	const { pathname } = useRouter()
-	const { userState, userDispatch } = useContext(UserStateContext)
 	const { langState, useLanguage } = useContext(LangStateContext)
 	const { dispatch } = useUserContext()
-	const [, , removeCookie] = useCookies(['LOGIN_INFO'])
 	const { push, asPath, reload } = useRouter()
 	const { $alert } = useAlertContext()
 
@@ -49,6 +42,7 @@ export default function Header() {
 
 	const [device, setDevice] = useState(initialDeviceState) // 디바이스 상태
 	const { isMobile, isTablet, isDesktop } = device
+	const { onLogoutSuccess, userState } = useUser()
 
 	const handleFollow = () => {
 		setScrollY(window.pageYOffset)
@@ -197,14 +191,7 @@ export default function Header() {
 		try {
 			const response = await POST_USER_LOGOUT(dispatch)
 			if (response.data.success) {
-				// 회원정보 초기화
-				userDispatch({
-					type: SET_INIT_USER_CONST,
-					payload: userInitialState,
-				})
-
-				// 유저 쿠키 지움
-				removeUserCookie(removeCookie)
+				onLogoutSuccess()
 
 				$alert(t('user.logoutAlert')).then(() => {
 					push('/')
@@ -222,14 +209,7 @@ export default function Header() {
 				const { code, msg } = error.data
 				console.log(`${code} : ${msg}`)
 				if (code === 'ESVC005') {
-					// user state 초기화
-					userDispatch({
-						type: SET_INIT_USER_CONST,
-						payload: userInitialState,
-					})
-
-					// 쿠키를 지움
-					removeUserCookie(removeCookie)
+					onLogoutSuccess()
 
 					$alert(t('user.logoutAlert')).then(() => {
 						push('/')

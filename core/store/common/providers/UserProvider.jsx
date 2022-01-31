@@ -3,224 +3,181 @@ import { UserStateContext } from '@store/common/create'
 import { userInitialState } from '@store/common/initialState'
 import { userReducer } from '@store/common/reducer'
 import { constants as configConstants } from '@/core/config/constants'
-import { useTranslation } from 'react-i18next'
-import { useAlertContext } from '../../common/providers/AlertProvider'
 import { constants } from '@store/common/constants'
 import { setAxiosHeader } from '@/core/config/axios'
-import { useRouter } from 'next/router'
-import { getCookieValue, removeUserCookie, setUserCookie } from '@/core/config/cookie'
-import { getExpireTime, getRefreshToken } from '@/core/api/user/userApi'
-import jwtDecode from 'jwt-decode'
+import { removeUserCookie, setUserCookie } from '@/core/config/cookie'
+import { postSilentRefresh } from '@/core/api/user/userApi'
 import { useCookies } from 'react-cookie'
 import { decode, encode } from '@/utils/crypto'
-import authPathList from '@/core/config/authPathList'
+import { validateTimeAccessToken } from '@/core/config/validToken'
 import { EventBus } from '@/utils/eventBus'
 
-const { SET_ADD_USER, SET_INIT_USER, CLOSE_ALERT } = constants
+const { SET_ADD_USER, SET_INIT_USER } = constants
 const { USER, SECURE } = configConstants
-
 export function UserProvider({ children }) {
 	const [userState, userDispatch] = useReducer(userReducer, userInitialState)
-	const { $alert, alertDispatch } = useAlertContext()
-	const [, setCookie, removeCookie] = useCookies(['LOGIN_INFO'])
-	const router = useRouter()
-	const { t } = useTranslation()
+	const [cookies, setCookie, removeCookie] = useCookies(['LOGIN_INFO'])
 
 	/*
-	 * 클라이언트 사이드 렌더링 전용 토큰 검증
+	 * 로그인 유무 검증
 	 */
 	useEffect(() => {
-		const eventBus = new EventBus()
-		eventBus.$on('fetchEvent', (response) => {
-			const { ssr, authentication } = response
-			if (ssr === false && authentication === true) {
-				userAccess('csr')
+		if (cookies?.LOGIN_INFO) {
+			const { accessToken, refreshToken } = getToken()
+			if (validateTimeAccessToken(accessToken) && validateTimeAccessToken(refreshToken)) {
+				const { id, name, email } = parseJwt(accessToken)
+				onLoginSuccess({ id, email, name, accessToken, refreshToken })
+			} else {
+				onLogoutSuccess()
 			}
-		})
+		} else {
+			onLogoutSuccess()
+		}
 	}, [])
 
 	/*
-	 * 서버사이드 렌더링 전용 토큰 검증
+	 * fetch 이벤트 핸들러
 	 */
 	useEffect(() => {
-		// 페이지 이동 시 Alert 끄기
-		alertDispatch({ type: CLOSE_ALERT })
-		userAccess('ssr')
-	}, [router.asPath])
+		const eventBus = new EventBus()
+		eventBus.$on('fetchEvent', fetchEventHandler)
 
-	function setUserInfo(payload) {
-		userDispatch({
-			type: SET_ADD_USER,
-			payload: payload,
-		})
-	}
+		return () => {
+			eventBus.$remove('fetchEvent', fetchEventHandler)
+		}
+	}, [])
 
-	function initUser() {
-		// user state 초기화
-		userDispatch({
-			type: SET_INIT_USER,
-			payload: userInitialState,
-		})
-	}
+	/*
+	 * Refresh token 이벤트 콜백 함수
+	 */
+	function fetchEventHandler(response) {
+		const { authentication, accessToken, refreshToken } = response
+		if (authentication === true) {
+			const { exp } = parseJwt(accessToken)
+			const now = new Date().getTime()
+			const exp2 = new Date(exp * 1000).getTime()
+			let expire_time = exp2 - now
 
-	function authenticationPathIndex() {
-		return authPathList.findIndex((path) => {
-			let authPath = path
-			if (path.includes('/**')) authPath = path.replace('/**', '')
-			return router.pathname.includes(authPath)
-		})
-	}
-
-	function userAccess(renderType) {
-		if (getCookieValue(USER.LOGIN_INFO)) {
-			const accessToken = decode(getCookieValue(USER.LOGIN_INFO), {
-				cookie: {
-					name: SECURE.PSID1,
-				},
-			})
-
-			setAxiosHeader(USER.AUTHORIZATION, accessToken)
-
-			if (validateAccessToken(accessToken)) {
-				if (!userState.id) {
-					// Axios 토큰 셋팅
-					const { id, email, name } = jwtDecode(accessToken)
-					setUserInfo({ id, email, name })
+			if (validateTimeAccessToken(accessToken) && validateTimeAccessToken(refreshToken)) {
+				if (expire_time < 60000 * 2) {
+					console.log('만료 10분전에 실행')
+					onSilentRefresh({ accessToken, refreshToken })
 				}
 			} else {
-				if (authenticationPathIndex() > -1) {
-					$alert(t('user.tokenExprire')).then(() => {
-						// 로그인 페이지로 이동
-						router.push('/user/user-login')
-					})
-				}
-			}
-		} else if (!getCookieValue(USER.LOGIN_INFO)) {
-			credentialExpiration()
-
-			if (renderType === 'ssr' && authenticationPathIndex() > -1) {
-				router.push('/user/user-login')
-			}
-
-			if (renderType === 'csr') {
-				validateAccessToken(null)
+				onLogoutSuccess()
 			}
 		}
 	}
 
 	/*
-	 * 토큰 검증 하는 함수
-	 * @return boolean
+	 * 새로운 토큰 발급
 	 */
-	function validateAccessToken(accessToken) {
-		if (!accessToken) {
-			credentialExpiration()
-			if (authenticationPathIndex() > -1) {
-				$alert(t('user.authNoAlert')).then(() => {
-					// 로그인 페이지로 이동
-					router.push('/user/user-login')
-				})
-			}
-			return false
+	async function onSilentRefresh({ accessToken, refreshToken }) {
+		try {
+			const response = await postSilentRefresh({ accessToken, refreshToken })
+			console.info('유저의 새로운 정보가 발급 되었습니다.')
+			onLoginSuccess(response.data)
+		} catch (error) {
+			console.log('On silent refresh error ==> ', error)
 		}
+	}
 
-		// jwt를 decode해서 payload를 추출한다.
-		const decodePayload = jwtDecode(accessToken)
+	function onLoginSuccess({ id, email, accessToken, refreshToken, name }) {
+		const data = { id, email, accessToken, refreshToken, name }
+		setUserInfo(data)
 
-		// exp가 UNIX Time으로 나오기 때문에 변환을 해준다.
-		const exp = new Date(decodePayload.exp * 1000).getTime()
-		const now = new Date().getTime() // 테스트시 주석처리 하면 됨
+		// 자동 로그인이 true인경우 자동 연장 진행
+		// if (autoSign) {
+		// 	console.log('expire_time', expire_time)
+		// 	// accessToken 만료하기 1분 전에 로그인 연장
+		// 	timeout = setTimeout(() => {
+		// 		onSilentRefresh({ accessToken, refreshToken, autoSign })
+		// 	}, expire_time - 60000)
+		// }
+	}
 
-		// 토큰세션 유지시간 테스트용 딜레이 타임
-		// const delayTime = 18000 // 딜레이 타임 (1000 = 1초)
-		// const now = new Date().getTime() + (3600000 - delayTime)
-
-		if (now < exp) {
-			// 30분 미만일 경우 토큰 갱신
-			const refreshTime = 1000 * 60 * 30
-			if (exp - now < refreshTime) {
-				// if (renderType === 'ssr') signExtension()
-				signExtension()
-			}
-			return true
-		}
-
-		credentialExpiration()
-
-		return false
+	function onLogoutSuccess() {
+		initUserInfo()
 	}
 
 	/*
-	 * 인증정보 만료 됐을 경우 실행되는 함수
+	 * 유저 정보 셋팅
 	 */
-	function credentialExpiration() {
-		// user state 초기화
-		initUser()
+	function setUserInfo(data) {
+		userDispatch({
+			type: SET_ADD_USER,
+			payload: { ...data, isLoggined: true },
+		})
 
-		// 쿠키를 지움
+		// 유저정보 쿠키에 저장
+		const aesToken = encode(data.accessToken + ':' + data.refreshToken, {
+			cookie: {
+				setCookie,
+				name: SECURE.PSID1,
+			},
+			hashKey: SECURE.PSID1K,
+		})
+
+		setAxiosHeader(USER.AUTHORIZATION, data.accessToken)
+		setUserCookie(setCookie, { aesToken })
+	}
+
+	/*
+	 * 유저 정보 초기화
+	 */
+	function initUserInfo() {
+		// 회원정보 초기화
+		userDispatch({
+			type: SET_INIT_USER,
+		})
+
 		removeUserCookie(removeCookie)
 	}
 
 	/*
-	 * Refresh 토큰과 유저 정보 호출
+	 * JWT Parser
 	 */
-	async function onSilentRefresh() {
-		if (getCookieValue(USER.LOGIN_INFO)) {
-			try {
-				const response = await getRefreshToken()
-				onRefreshSuccess(response)
-			} catch (error) {
-				console.error(error)
-			}
-		}
+	function parseJwt(token) {
+		const base64Url = token.split('.')[1]
+		const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/')
+		const jsonPayload = decodeURIComponent(
+			atob(base64)
+				.split('')
+				.map(function (c) {
+					return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2)
+				})
+				.join(''),
+		)
+
+		return JSON.parse(jsonPayload)
 	}
 
 	/*
-	 * Refresh 토큰 발급 성공 시 호출
+	 * AES 디코딩 후 토큰 값 반환
 	 */
-	function onRefreshSuccess(response) {
-		if (response.success) {
-			const { data: accessToken } = response
-			// accessToken 설정
-			setAxiosHeader(USER.AUTHORIZATION, accessToken)
-			// 유저정보 쿠키에 저장
-			const aesToken = encode(accessToken, {
-				cookie: {
-					setCookie,
-					name: SECURE.PSID1,
-				},
-				hashKey: SECURE.PSID1K,
-			})
+	function getToken() {
+		const tokenInfo = decode(cookies.LOGIN_INFO, {
+			cookie: {
+				name: SECURE.PSID1,
+			},
+		})
+		const accessToken = tokenInfo.split(':')[0]
+		const refreshToken = tokenInfo.split(':')[1]
 
-			setUserCookie(setCookie, { aesToken })
-		}
-	}
-
-	/*
-	 * accessToken 만료되기 30분 전에 로그인 연장 함수 호출하는 함수
-	 */
-	async function signExtension() {
-		try {
-			const response = await getExpireTime()
-			if (response.data < 1800) {
-				onSilentRefresh()
-			}
-		} catch (err) {
-			console.error(err)
-		}
+		return { accessToken, refreshToken }
 	}
 
 	return (
-		<UserStateContext.Provider value={{ userState, userDispatch, setUserInfo, initUser }}>
+		<UserStateContext.Provider value={{ userState, userDispatch, onLoginSuccess, onLogoutSuccess, getToken }}>
 			{children}
 		</UserStateContext.Provider>
 	)
 }
 
 export function useUser() {
-	const { userState, userDispatch, setUserInfo, initUser } = useContext(UserStateContext)
+	const { userState, userDispatch, onLoginSuccess, onLogoutSuccess, getToken } = useContext(UserStateContext)
 	if (!userState) {
 		throw new Error('Cannot find userState')
 	}
-	return { userState, userDispatch, setUserInfo, initUser }
+	return { userState, userDispatch, onLoginSuccess, onLogoutSuccess, getToken }
 }
