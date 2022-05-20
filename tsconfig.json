@@ -1,0 +1,56 @@
+{
+  "compilerOptions": {
+    "target": "es6", /* 컴파일 결과의 ECMAScript 버전. Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019', 'ES2020', or 'ESNEXT'. */
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ], /* Specify library files to be included in the compilation. */
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve", /* Next는 react가 아니라 preserve로 두어야 합니다. next.js implements its own optimized jsx transform 라고 하네요. Specify JSX code generation: "preserve", 'react-native', or 'react'. */// "declaration": true,                   /* d.ts 정의 파일을 생성하고 싶다면 Generates corresponding '.d.ts' file. */
+    "baseUrl": ".",
+    "paths": {
+      "@": [
+        "./"
+      ],
+      "@/*": [
+        "./*"
+      ],
+      "@comp/*": [
+        "./components/*"
+      ],
+      "@container/*": [
+        "./containers/*"
+      ],
+      "@api/*": [
+        "./core/api/*"
+      ],
+      "@store/*": [
+        "./core/store/*"
+      ],
+      "@styles/*": [
+        "./styles/*"
+      ],
+      "@lang/*": [
+        "./lang/*"
+      ]
+    },
+    "incremental": true
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

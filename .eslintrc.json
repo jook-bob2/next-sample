@@ -1,42 +1,83 @@
 {
-  "env": {
-    "browser": true,
-    "es6": true,
-    "node": true
-  },
-  "parser": "babel-eslint",
-  "extends": [
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "plugin:prettier/recommended"
-  ],
-  "settings": {
-    "react": {
-      "version": "detect"
-    }
-  },
-  "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true,
-      "js": true
-    },
-    "ecmaVersion": 2020,
-    "sourceType": "module"
-  },
-  "plugins": ["react", "react-hooks", "prettier"],
-  "rules": {
-    "react/react-in-jsx-scope": 0,
-    "react/prefer-stateless-function": 0,
-    "react/jsx-filename-extension": 0,
-    "react/jsx-one-expression-per-line": 0,
-    "no-nested-ternary": 0,
-    "react/prop-types": "off",
-    "no-prototype-builtins": "off",
-    "eqeqeq": "warn",
-    "no-console": "off",
-    "no-var": "error",
-    "no-else-return": "error",
-    "no-alert": "warn",
-    "react/display-name": "off"
-  }
+	"root": true,
+	"env": {
+		"browser": true,
+		"es6": true,
+		"node": true
+	},
+	"parser": "@typescript-eslint/parser",
+	"plugins": ["react", "react-hooks", "@typescript-eslint", "prettier"],
+	"extends": [
+		"plugin:@typescript-eslint/eslint-recommended",
+		"plugin:@typescript-eslint/recommended", 
+		"plugin:prettier/recommended"
+	],
+	"parserOptions": {
+		"sourceType": "module",
+		"ecmaVersion": 2020,
+		"ecmaFeatures": {
+			"jsx": true,
+			"tsx": true,
+			"ts": true,
+			"js": true
+		}
+	},
+	"ignorePatterns": ["node_modules/", ".next/*"],
+	"settings": {
+		"react": {
+			"version": "detect"
+		},
+		"import/resolver": {
+			"node": {
+				"extensions": [".js", ".jsx", ".ts", ".tsx", ".d.ts"]
+			}
+		}
+	},
+	"rules": {
+		"react/react-in-jsx-scope": 0,
+		"react/prefer-stateless-function": 0,
+		"react/jsx-filename-extension": 0,
+		"react/jsx-one-expression-per-line": 0,
+		"@typescript-eslint/no-var-requires": 0,
+		"no-nested-ternary": 0,
+		"no-unused-vars": "off",
+		"no-undef": "off",
+		"/no-useless-escape": "off",
+		"prettier/prettier": [
+			"error",
+			{
+                "endOfLine": "auto"
+            }
+		],
+		"@typescript-eslint/no-unused-vars": "off",
+		"@typescript-eslint/no-explicit-any": "off",
+		"@typescript-eslint/no-empty-interface": "off",
+		"no-empty-interface": "off",
+		"react/prop-types": "off",
+		"no-prototype-builtins": "off",
+		"eqeqeq": "warn",
+		"no-console": "off",
+		"no-var": "error",
+		"no-else-return": "error",
+		"no-alert": "warn",
+		"react/display-name": "off"
+	},
+	"globals": {
+		"React": "writable",
+		"Atomics": "readonly",
+    	"SharedArrayBuffer": "readonly"
+	},
+	"overrides": [
+		{
+			"files": ["**/__tests__/*.{j,t}s?(x)", "**/tests/unit/**/*.spec.{j,t}s?(x)"],
+			"rules": {
+				"@typescript-eslint/explicit-function-return-type": "error",
+				"@typescript-eslint/no-unused-vars": "error",
+				"@typescript-eslint/no-empty-interface": "off"
+			},
+			"env": {
+				"jest": true
+			}
+		}
+	]
 }
